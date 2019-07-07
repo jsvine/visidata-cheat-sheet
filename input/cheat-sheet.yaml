@@ -1,0 +1,531 @@
+- title:
+    en: <i>A VisiData Cheat Sheet</i>
+    es: <i>Un "Cheat Sheet" Para VisiData</i>
+  commands:
+  - cmd:
+      en: Version
+      es: Versión
+    desc:
+      en: VisiData v1.5.2
+  - cmd:
+      en: Updated
+      es: Actualizado
+    desc:
+      en: '2019-07-07'
+      es: '2019-07-07'
+  - cmd:
+      en: More info
+      es: Más info
+    desc:
+      en: <a href="https://visidata.org/">visidata.org</a><br/><a href="https://jsvine.github.io/intro-to-visidata/">jsvine.github.io/intro-to-visidata</a>
+- title:
+    en: Getting out of trouble
+    es: Salir de problemas
+  commands:
+  - cmd:
+      en: <kbd>Ctrl-c</kbd>
+    desc:
+      en: Abort the current command
+      es: Abortar el comando actual
+  - cmd:
+      en: <kbd>Ctrl-q</kbd>
+    desc:
+      en: Force-quit VisiData entirely
+      es: Forzar la salida (enteramente)
+  - cmd:
+      en: <kbd>q</kbd>
+    desc:
+      en: Quit the current VisiData "sheet"
+      es: Salir la hoja ("sheet") actual
+  - cmd:
+      en: <kbd>Ctrl-h</kbd>
+    desc:
+      en: Display the "Quick Reference Guide"
+      es: Mostrar el manual rápido ("Quick Reference Guide")
+  - cmd:
+      en: <kbd>z</kbd> + <kbd>Ctrl-h</kbd>
+    desc:
+      en: Display list of commands available on the current sheet
+      es: Mostrar la lista de comandos (para la hoja actual)
+- title:
+    en: Input/output
+    es: Entrada/salida
+  commands:
+  - cmd:
+      en: <kbd>o</kbd> + <i>filename</i>
+      es: <kbd>o</kbd> + <i>archivo</i>
+    desc:
+      en: Open a file
+      es: Abrir un archivo
+  - cmd:
+      en: <kbd>Ctrl-s</kbd> + <i>filename</i>
+      es: <kbd>Ctrl-s</kbd> + <i>archivo</i>
+    desc:
+      en: Save current sheet to <i>filename</i>
+      es: Guardar la hoja actual a <i>archivo</i>
+  - cmd:
+      en: <kbd>g</kbd> + <kbd>Ctrl-s</kbd> + <i>filename</i>
+      es: <kbd>g</kbd> + <kbd>Ctrl-s</kbd> + <i>archivo</i>
+    desc:
+      en: Save all sheets to <i>filename</i>
+      es: Guardar todas las hojas a <i>archivo</i>
+  - cmd:
+      en: <kbd>gY</kbd>
+    desc:
+      en: Copy sheet (or selected rows) to clipboard
+      es: Copiar la hoja (o las filas sel.) al portapapeles
+  - cmd:
+      en: <kbd>gzY</kbd>
+    desc:
+      en: Copy column (or selected rows for column) to clipboard
+      es: Copiar la columna (o las filas sel. en la columna) al portapapeles
+- title:
+    en: Metasheets
+    es: Metahojas
+  commands:
+  - cmd:
+      en: <kbd>S</kbd>
+    desc:
+      en: Sheets Sheet
+      es: La hoja de hojas ("Sheets Sheet")
+  - cmd:
+      en: <kbd>gS</kbd>
+    desc:
+      en: Sheets Graveyard
+      es: El cementerio de hojas ("Sheets Graveyard")
+  - cmd:
+      en: <kbd>C</kbd>
+    desc:
+      en: Columns Sheet
+      es: La hoja de columnas
+  - cmd:
+      en: <kbd>O</kbd>
+    desc:
+      en: Gobal options sheet
+      es: La hoja de las opciones globales
+  - cmd:
+      en: <kbd>zO</kbd>
+    desc:
+      en: This-sheet options sheet
+      es: Las opciones de la hoja actual
+- title:
+    en: Move cursor ...
+    es: Mover el cursor ...
+  commands:
+  - cmd:
+      en: <kbd>gj</kbd>
+    desc:
+      en: to the last row
+      es: a la última fila
+  - cmd:
+      en: <kbd>gk</kbd>
+    desc:
+      en: to the first row
+      es: a la primera fila
+  - cmd:
+      en: <kbd>gh</kbd>
+    desc:
+      en: to the leftmost column
+      es: a la columna más a la izquierda
+  - cmd:
+      en: <kbd>gl</kbd>
+    desc:
+      en: to the rightmost column
+      es: a la columna más a la derecha
+  - cmd:
+      en: <kbd>Ctrl-F</kbd>
+    desc:
+      en: one page down (forward)
+      es: una página hacia abajo
+  - cmd:
+      en: <kbd>Ctrl-B</kbd>
+    desc:
+      en: one page up (backward)
+      es: una página hacia arriba
+- title:
+    en: Moving via search
+    es: Ir mediante la búsqueda
+  commands:
+  - cmd:
+      en: <kbd>/</kbd> + <i>regex</i>
+    desc:
+      en: Search forward in <i>current</i> column
+      es: Buscar hacia adelante en la columna <i>actual</i>
+  - cmd:
+      en: <kbd>?</kbd> + <i>regex</i>
+    desc:
+      en: Search backward in <i>current</i> column
+      es: Buscar hacia atrás en la columna <i>actual</i>
+  - cmd:
+      en: <kbd>g/</kbd> + <i>regex</i>
+    desc:
+      en: Search forward in <i>all</i> columns
+      es: Buscar hacia adelante en todas las columnas
+  - cmd:
+      en: <kbd>g?</kbd> + <i>regex</i>
+    desc:
+      en: Search backward in <i>all</i> columns
+      es: Buscar hacia atrás en todas las columnas
+  - cmd:
+      en: <kbd>n</kbd>
+    desc:
+      en: Move to next matching row
+      es: Ir a la siguiente fila coincidente
+  - cmd:
+      en: <kbd>N</kbd>
+    desc:
+      en: Move to previous matching row
+      es: Ir a la anterior fila coincidente
+- title:
+    en: Basic row selection
+    es: Selección básica de linéas
+  commands:
+  - cmd:
+      en: <kbd>s</kbd>
+    desc:
+      en: Select the current row
+      es: Seleccionar la fila actual
+  - cmd:
+      en: <kbd>u</kbd>
+    desc:
+      en: Unselect the current row
+      es: Deseleccionar la fila actual
+  - cmd:
+      en: <kbd>t</kbd>
+    desc:
+      en: Toggle the current row between selected/unselected
+      es: Cambiar la fila actual entre de/seleccionada
+  - cmd:
+      en: <kbd>gs</kbd>
+    desc:
+      en: Select all rows
+      es: Seleccionar todas las filas
+  - cmd:
+      en: <kbd>gu</kbd>
+    desc:
+      en: Unselect all rows
+      es: Deseleccionar todas las filas
+  - cmd:
+      en: <kbd>gt</kbd>
+    desc:
+      en: Toggle all rows between selected/unselected
+      es: Cambiar todas las filas entre de/seleccionada
+- title:
+    en: Advanced row selection
+    es: Selección avanzada de linéas
+  commands:
+  - cmd:
+      en: <kbd>|</kbd> + <i>regex</i>
+    desc:
+      en: Select all rows where <i>regex</i> matches the <strong>current column</strong>
+      es: Seleccionar las filas donde <i>regex</i> coincide con la <strong>columna actual</strong>
+  - cmd:
+      en: <kbd>\</kbd> + <i>regex</i>
+    desc:
+      en: Unselect all rows where <i>regex</i> matches the <strong>current column</strong>
+      es: Deseleccionar las filas donde <i>regex</i> coincide con la <strong>columna actual</strong>
+  - cmd:
+      en: <kbd>g|</kbd> + <i>regex</i>
+    desc:
+      en: Select all rows where <i>regex</i> matches <strong>any column</strong>
+      es: Seleccionar las filas donde <i>regex</i> coincide con <strong>cualquier columna</strong>
+  - cmd:
+      en: <kbd>g\</kbd> + <i>regex</i>
+    desc:
+      en: Unselect all rows where <i>regex</i> matches <strong>any</strong> column
+      es: Deseleccionar las filas donde <i>regex</i> coincide con <strong>cualquier columna</strong>
+  - cmd:
+      en: <kbd>,</kbd>
+    desc:
+      en: Select all rows where the <strong>current column</strong> matches the current cell
+      es: Sel. las filas donde la <strong>columna actual</strong> coincide con la celda actual
+  - cmd:
+      en: <kbd>g,</kbd>
+    desc:
+      en: Select all rows where <strong>any column</strong> matches the current cell
+      es: Sel. las filas donde <strong>cualquier col.</strong> coincide con la celda actual
+  - cmd:
+      en: <kbd>z|</kbd> + <i>expr</i>
+    desc:
+      en: Select all rows where <i>expr</i> evaluates to <code>True</code>
+      es: Seleccionar las filas donde <i>expr</i> se evalúa como <code>True</code>
+  - cmd:
+      en: <kbd>z\</kbd> + <i>expr</i>
+    desc:
+      en: Unselect all rows where <i>expr</i> evaluates to <code>True</code>
+      es: Deseleccionar las filas donde <i>expr</i> se evalúa como <code>True</code>
+- title:
+    en: Shifting rows / columns
+    es: Mover las filas y columnas
+  commands:
+  - cmd:
+      en: <kbd>J</kbd>
+    desc:
+      en: Move row up
+      es: Mover hacia arriba la fila 
+  - cmd:
+      en: <kbd>K</kbd>
+    desc:
+      en: Move row down
+      es: Mover hacia abajo la fila 
+  - cmd:
+      en: <kbd>H</kbd>
+    desc:
+      en: Move column left
+      es: Mover hacia la izquierda la columna
+  - cmd:
+      en: <kbd>L</kbd>
+    desc:
+      en: Move column right
+      es: Mover hacia la derecha la columna
+- title:
+    en: Setting column types
+    es: Establecer los tipos de columna
+  commands:
+  - cmd:
+      en: <kbd>#</kbd>
+    desc:
+      en: Integer
+      es: Entero
+  - cmd:
+      en: <kbd>%</kbd>
+    desc:
+      en: Float
+      es: Flotante
+  - cmd:
+      en: <kbd>$</kbd>
+    desc:
+      en: Currency
+      es: Moneda
+  - cmd:
+      en: <kbd>@</kbd>
+    desc:
+      en: Date
+      es: Fecha
+  - cmd:
+      en: <kbd>~</kbd>
+    desc:
+      en: Text
+      es: Texto
+- title:
+    en: Renaming columns
+    es: Renombrar columnas
+  commands:
+  - cmd:
+      en: <kbd>^</kbd>
+    desc:
+      en: Rename current column
+      es: Renombrar la columna actual
+  - cmd:
+      en: <kbd>g^</kbd>
+    desc:
+      en: Set names of all <i>unnamed</i> columns to the values in the current or selected row(s)
+      es: Establecer los nombres de todas las columnas <i>sin nombre</i> como los valores en la fila actual (o sel.)
+  - cmd:
+      en: <kbd>gz^</kbd>
+    desc:
+      en: Set names of all <i>visible</i> columns to the values in the current or selected row(s)
+      es: Establecer los nombres de <i>todas</i> las columnas como los valores en la fila actual (o sel.)
+- title:
+    en: Resizing columns
+    es: Cambiar el tamaño de las columnas
+  commands:
+  - cmd:
+      en: <kbd>_</kbd>
+    desc:
+      en: Adjust the width of <strong>current column</strong> to fit text in all visible rows
+      es: Ajustar la <strong>columna actual</strong> para encajar el texto de las filas visibles
+  - cmd:
+      en: <kbd>g_</kbd>
+    desc:
+      en: Adjust the width of <strong>all columns</strong> to fit text in all visible rows
+      es: Ajustar <strong>todas las columnas</strong> para encajar el texto de las filas visibles
+  - cmd:
+      en: <kbd>z_</kbd> + <i>n</i>
+    desc:
+      en: Set the current column's width to <i>n</i> characters
+      es: Cambiar la anchura de la columna actual a <i>n</i> caracteres
+  - cmd:
+      en: <kbd>-</kbd>
+    desc:
+      en: Hide the current column by setting its width to <code>0</code>
+      es: Ocultar la columna actual cambiando su anchura a <code>0</code>
+  - cmd:
+      en: <kbd>gv</kbd>
+    desc:
+      en: Unhide all columns
+      es: Revelar todas las columnas
+  - cmd:
+      en: <kbd>z-</kbd>
+    desc:
+      en: Shrink the current column's width in half
+      es: Reducir la anchura de la columna actual a la mitad
+- title:
+    en: Sort rows ...
+    es: Ordenar las filas ...
+  commands:
+  - cmd:
+      en: <kbd>[</kbd>
+    desc:
+      en: in ascending order of <i>current column</i>
+      es: ascendente, por la <i>columna actual</i>
+  - cmd:
+      en: <kbd>]</kbd>
+    desc:
+      en: in descending order of <i>current column</i>
+      es: descendente, por la <i>columna actual</i>
+  - cmd:
+      en: <kbd>g[</kbd>
+    desc:
+      en: in ascending order of <i>key columns</i>
+      es: ascendente, por las <i>columnas claves</i>
+  - cmd:
+      en: <kbd>g]</kbd>
+    desc:
+      en: in descending order of <i>key columns</i>
+      es: descendente, por las <i>columnas claves</i>
+- title:
+    en: Filtering
+    es: Filtrar 
+  commands:
+  - cmd:
+      en: <kbd>"</kbd>
+    desc:
+      en: Create new sheet of selected rows
+      es: Crear una hoja con las filas seleccionadas
+  - cmd:
+      en: <kbd>gz"</kbd>
+    desc:
+      en: Create new sheet with "deep copy" of selected rows
+      es: Crear una copia "profunda" de las filas seleccionadas
+  - cmd:
+      en: <kbd>R</kbd> + <i>n</i>
+    desc:
+      en: Create new sheet containing <i>n</i> randomly chosen rows
+      es: Crear una hoja que contiene <i>n</i> filas elegidas al azar
+- title:
+    en: Summarizing data
+    es: Resumir los datos
+  commands:
+  - cmd:
+      en: <kbd>F</kbd>
+    desc:
+      en: Create frequency table of <i>current column</i>
+      es: Crear una tabla de frecuencias de la <i>columna actual</i>
+  - cmd:
+      en: <kbd>gF</kbd>
+    desc:
+      en: Create frequency table of <i>key columns</i>
+      es: Crear una tabla de frecuencias de las <i>columnas claves</i>
+  - cmd:
+      en: <kbd>+</kbd> + <i>aggregator</i>
+    desc:
+      en: Add aggregator to column
+      es: Añadir un agregador a la columna
+  - cmd:
+      en: <kbd>z+</kbd> + <i>aggregator</i>
+      es: <kbd>z+</kbd> + <i>agregador</i>
+    desc:
+      en: Calculate one-time aggregation of column
+      es: Calcular (una vez) el promedio, la suma, etc.
+  - cmd:
+      en: <kbd>I</kbd>
+    desc:
+      en: Create a "Describe Sheet," with summary stats for each column
+      es: Crear una hoja que mostra estadísticas básica de cada columna
+- title:
+    en: Creating new columns
+    es: Crear nuevas columnas
+  commands:
+  - cmd:
+      en: <kbd>=</kbd> + <i>expr</i>
+    desc:
+      en: Create a new column from a Python <i>expr</i> evaluated against each row
+      es: Crear una columna que mostra el resultado de la <i>expr</i> en Python 
+  - cmd:
+      en: <kbd>:</kbd> + <i>regex</i>
+    desc:
+      en: Create new column(s) by splitting current column on <i>regex</i>
+      es: Crear columna(s) dividiendo la columna actual con <i>regex</i>
+  - cmd:
+      en: <kbd>;</kbd> + <i>regex</i>
+    desc:
+      en: Create new column(s) by extracting <i>regex</i> groups from current column
+      es: Crear columna(s) extrayendo los grupos <i>regex</i> de la columna actual
+  - cmd:
+      en: <kbd>'</kbd>
+    desc:
+      en: Create "frozen" copy of current column, with all cells evaluated
+      es: Crear una copia "congelada" de la columna actual
+- title:
+    en: Reshaping data
+    es: Cambiar la forma de los datos
+  commands:
+  - cmd:
+      en: <kbd>W</kbd>
+    desc:
+      en: Create pivot table sheet, with key column(s) as rows and current column as values
+      es: Crear una tabla pivot, usando las columnas claves como filas y la columna actual como valores
+  - cmd:
+      en: <kbd>M</kbd>
+    desc:
+      en: Create "melted" sheet, with key columns as non-melted values
+      es: Crear una hoja "fundido", respetando las columnas claves
+  - cmd:
+      en: <kbd>T</kbd>
+    desc:
+      en: Create a transposed sheet, where columns become rows and v.v.
+      es: Crear un hoja transpuesta intercambiando las columnas y filas
+- title:
+    en: Editing cells
+    es: Editar las celdas
+  commands:
+  - cmd:
+      en: <kbd>e</kbd>
+    desc:
+      en: Begin editing current cell
+      es: Empezar a editar la celda actual
+  - cmd:
+      en: <kbd>Enter</kbd>
+    desc:
+      en: Finish editing
+      es: Terminar la edición
+  - cmd:
+      en: <kbd>Ctrl-c</kbd>
+    desc:
+      en: Cancel editing
+      es: Cancelar la edición
+  - cmd:
+      en: <kbd>Ctrl-a</kbd>
+    desc:
+      en: Move to beginning of cell
+      es: Ir al pricipio de la celda
+  - cmd:
+      en: <kbd>Ctrl-e</kbd>
+    desc:
+      en: Move to end of cell
+      es: Ir al final de la celda
+  - cmd:
+      en: <kbd>Ctrl-k</kbd>
+    desc:
+      en: Clear contents from cursor's position to end of line
+      es: Borrar la parte que sigue al cursor
+- title:
+    en: Misc.
+    es: Misc.
+  commands:
+  - cmd:
+      en: <kbd>Ctrl-^</kbd>
+    desc:
+      en: Toggle between current and previous sheet
+      es: Saltar entre la hoja actual y anterior
+  - cmd:
+      en: <kbd>!</kbd>
+    desc:
+      en: Make current column a "key" column
+      es: Marcar la columna actual como "clave"
+  - cmd:
+      en: <kbd>Space</kbd>
+    desc:
+      en: Open long-name command prompt
+      es: Abrir la entrada para comandos de "nombres largos"

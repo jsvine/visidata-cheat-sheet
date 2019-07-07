@@ -1,0 +1,860 @@
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Un "Cheat Sheet" Para VisiData</title>
+    <meta name="author" content="Jeremy Singer-Vine">
+    <meta name="description" content="Un guía de una página para recordar los comandos de VisiData">
+
+    <style>
+
+    html {
+        width: 100%;
+    }
+    body {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    #heading {
+        text-align: center;
+        margin: 1em 0;
+        color: #999;
+    }
+
+    #pdf {
+        margin: 1em 0;
+    }
+
+    #pdf a {
+        font-weight: bold;
+        color: black;
+        background-color: yellow;
+        padding: 0.5em 1em;
+    }
+
+
+    #heading a + a {
+        margin-left: 1em;
+    }
+
+    #pdf-footer {
+        display: none;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table + table {
+        margin-top: 1em;
+    }
+
+    tr + tr {
+        border-top: 1px solid #CCC;
+    }
+
+    th, td {
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        padding: 0.1em 0.25em;
+    }
+
+    td {
+        padding: 0.3em 0.25em;
+    }
+
+    th.cs-category {
+        font-size: 1.5em;
+        font-weight: bold;
+        background-color: #EEE;
+        border-bottom: 1px solid #333;
+    }
+
+    td.cs-command {
+        width: 25%;
+    }
+
+    td.cs-desc {
+        width: 75%;
+    }
+
+
+    /* Via http://www.tangycode.com/Getting-Stack-Overflow-Keyboard-KBD-CSS-tags/ and Stack Overflow */
+
+    kbd {
+        display: inline-block;
+        margin: 0;
+        padding: 0.1em 0.5em;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        font-size: 0.8em;
+        font-weight: bold;
+        color: #242729;
+        text-shadow: 0 1px 0 #FFF;
+        background-color: #e1e3e5;
+        border: 1px solid #adb3b9;
+        border-radius: 3px;
+        box-shadow: 0 1px 0 rgba(12, 13, 14, 0.2), 0 0 0 2px #FFF inset;
+        white-space: nowrap;
+    }
+
+    @page {
+        size: Letter;
+        margin: 0.1in;
+    }
+
+    @media print {
+        body {
+            overflow-x: visible;
+            font-size: 8px;
+        }
+
+        main {
+            max-width: 100%;
+        }
+
+        #heading {
+            display: none;
+        }
+
+        #tables {
+            width: 100%;
+            height: 99%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-left: -1%;
+        }
+
+        table + table {
+            margin-top: 0;
+        }
+
+        table {
+            margin: 0;
+            margin-left: 1%;
+            margin-bottom: 1em;
+            width: 32%;
+        }
+
+        th.cs-category {
+            font-size: 1.25em;
+        }
+
+        #pdf-footer {
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            left: 50%;
+            -webkit-transform: translate(-50%, 0);
+            font-size: 1.75em;
+            color: #666;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    </style>
+
+</head>
+<body>
+<div id="heading">
+    <!-- via http://tholman.com/github-corners/ -->
+    <a class="github-corner" href="https://github.com/jsvine/visidata-cheat-sheet" title="Edit me on GitHub"><svg width="80" height="80" viewbox="0 0 250 250"><title>Fork me on GitHub</title><path d="M0 0h250v250"></path><path class="octo-arm" d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2" fill="currentColor" style="transform-origin:130px 110px;"></path><path class="octo-body" d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z" fill="currentColor"></path></svg><style> .github-corner svg{position:absolute;right:0;top:0;mix-blend-mode:darken;color:#ffffff;fill:#000000;}</style></a>
+    <div id="pdf">
+        <a href="../downloads/visidata-cheat-sheet.es.pdf">
+            Descargar la Versión PDF
+        </a>
+    </div>
+    <div id="other-langs">
+    Otras idiomas:
+    
+    
+    <a href="../en/">en</a>
+    
+    
+    
+    
+    </div>
+</div>
+<main>
+<div id="tables">
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2"><i>Un "Cheat Sheet" Para VisiData</i></th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command">Versión</td>
+        <td class="cs-desc">VisiData v1.5.2</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command">Actualizado</td>
+        <td class="cs-desc">2019-07-07</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command">Más info</td>
+        <td class="cs-desc"><a href="https://visidata.org/">visidata.org</a><br/><a href="https://jsvine.github.io/intro-to-visidata/">jsvine.github.io/intro-to-visidata</a></td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Salir de problemas</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>Ctrl-c</kbd></td>
+        <td class="cs-desc">Abortar el comando actual</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>Ctrl-q</kbd></td>
+        <td class="cs-desc">Forzar la salida (enteramente)</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>q</kbd></td>
+        <td class="cs-desc">Salir la hoja ("sheet") actual</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>Ctrl-h</kbd></td>
+        <td class="cs-desc">Mostrar el manual rápido ("Quick Reference Guide")</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>z</kbd> + <kbd>Ctrl-h</kbd></td>
+        <td class="cs-desc">Mostrar la lista de comandos (para la hoja actual)</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Entrada/salida</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>o</kbd> + <i>archivo</i></td>
+        <td class="cs-desc">Abrir un archivo</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>Ctrl-s</kbd> + <i>archivo</i></td>
+        <td class="cs-desc">Guardar la hoja actual a <i>archivo</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g</kbd> + <kbd>Ctrl-s</kbd> + <i>archivo</i></td>
+        <td class="cs-desc">Guardar todas las hojas a <i>archivo</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gY</kbd></td>
+        <td class="cs-desc">Copiar la hoja (o las filas sel.) al portapapeles</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gzY</kbd></td>
+        <td class="cs-desc">Copiar la columna (o las filas sel. en la columna) al portapapeles</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Metahojas</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>S</kbd></td>
+        <td class="cs-desc">La hoja de hojas ("Sheets Sheet")</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gS</kbd></td>
+        <td class="cs-desc">El cementerio de hojas ("Sheets Graveyard")</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>C</kbd></td>
+        <td class="cs-desc">La hoja de columnas</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>O</kbd></td>
+        <td class="cs-desc">La hoja de las opciones globales</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>zO</kbd></td>
+        <td class="cs-desc">Las opciones de la hoja actual</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Mover el cursor ...</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>gj</kbd></td>
+        <td class="cs-desc">a la última fila</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gk</kbd></td>
+        <td class="cs-desc">a la primera fila</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gh</kbd></td>
+        <td class="cs-desc">a la columna más a la izquierda</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gl</kbd></td>
+        <td class="cs-desc">a la columna más a la derecha</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>Ctrl-F</kbd></td>
+        <td class="cs-desc">una página hacia abajo</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>Ctrl-B</kbd></td>
+        <td class="cs-desc">una página hacia arriba</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Ir mediante la búsqueda</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>/</kbd> + <i>regex</i></td>
+        <td class="cs-desc">Buscar hacia adelante en la columna <i>actual</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>?</kbd> + <i>regex</i></td>
+        <td class="cs-desc">Buscar hacia atrás en la columna <i>actual</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g/</kbd> + <i>regex</i></td>
+        <td class="cs-desc">Buscar hacia adelante en todas las columnas</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g?</kbd> + <i>regex</i></td>
+        <td class="cs-desc">Buscar hacia atrás en todas las columnas</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>n</kbd></td>
+        <td class="cs-desc">Ir a la siguiente fila coincidente</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>N</kbd></td>
+        <td class="cs-desc">Ir a la anterior fila coincidente</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Selección básica de linéas</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>s</kbd></td>
+        <td class="cs-desc">Seleccionar la fila actual</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>u</kbd></td>
+        <td class="cs-desc">Deseleccionar la fila actual</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>t</kbd></td>
+        <td class="cs-desc">Cambiar la fila actual entre de/seleccionada</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gs</kbd></td>
+        <td class="cs-desc">Seleccionar todas las filas</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gu</kbd></td>
+        <td class="cs-desc">Deseleccionar todas las filas</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gt</kbd></td>
+        <td class="cs-desc">Cambiar todas las filas entre de/seleccionada</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Selección avanzada de linéas</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>|</kbd> + <i>regex</i></td>
+        <td class="cs-desc">Seleccionar las filas donde <i>regex</i> coincide con la <strong>columna actual</strong></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>\</kbd> + <i>regex</i></td>
+        <td class="cs-desc">Deseleccionar las filas donde <i>regex</i> coincide con la <strong>columna actual</strong></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g|</kbd> + <i>regex</i></td>
+        <td class="cs-desc">Seleccionar las filas donde <i>regex</i> coincide con <strong>cualquier columna</strong></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g\</kbd> + <i>regex</i></td>
+        <td class="cs-desc">Deseleccionar las filas donde <i>regex</i> coincide con <strong>cualquier columna</strong></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>,</kbd></td>
+        <td class="cs-desc">Sel. las filas donde la <strong>columna actual</strong> coincide con la celda actual</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g,</kbd></td>
+        <td class="cs-desc">Sel. las filas donde <strong>cualquier col.</strong> coincide con la celda actual</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>z|</kbd> + <i>expr</i></td>
+        <td class="cs-desc">Seleccionar las filas donde <i>expr</i> se evalúa como <code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>z\</kbd> + <i>expr</i></td>
+        <td class="cs-desc">Deseleccionar las filas donde <i>expr</i> se evalúa como <code>True</code></td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Mover las filas y columnas</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>J</kbd></td>
+        <td class="cs-desc">Mover hacia arriba la fila</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>K</kbd></td>
+        <td class="cs-desc">Mover hacia abajo la fila</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>H</kbd></td>
+        <td class="cs-desc">Mover hacia la izquierda la columna</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>L</kbd></td>
+        <td class="cs-desc">Mover hacia la derecha la columna</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Establecer los tipos de columna</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>#</kbd></td>
+        <td class="cs-desc">Entero</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>%</kbd></td>
+        <td class="cs-desc">Flotante</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>$</kbd></td>
+        <td class="cs-desc">Moneda</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>@</kbd></td>
+        <td class="cs-desc">Fecha</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>~</kbd></td>
+        <td class="cs-desc">Texto</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Renombrar columnas</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>^</kbd></td>
+        <td class="cs-desc">Renombrar la columna actual</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g^</kbd></td>
+        <td class="cs-desc">Establecer los nombres de todas las columnas <i>sin nombre</i> como los valores en la fila actual (o sel.)</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gz^</kbd></td>
+        <td class="cs-desc">Establecer los nombres de <i>todas</i> las columnas como los valores en la fila actual (o sel.)</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Cambiar el tamaño de las columnas</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>_</kbd></td>
+        <td class="cs-desc">Ajustar la <strong>columna actual</strong> para encajar el texto de las filas visibles</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g_</kbd></td>
+        <td class="cs-desc">Ajustar <strong>todas las columnas</strong> para encajar el texto de las filas visibles</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>z_</kbd> + <i>n</i></td>
+        <td class="cs-desc">Cambiar la anchura de la columna actual a <i>n</i> caracteres</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>-</kbd></td>
+        <td class="cs-desc">Ocultar la columna actual cambiando su anchura a <code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gv</kbd></td>
+        <td class="cs-desc">Revelar todas las columnas</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>z-</kbd></td>
+        <td class="cs-desc">Reducir la anchura de la columna actual a la mitad</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Ordenar las filas ...</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>[</kbd></td>
+        <td class="cs-desc">ascendente, por la <i>columna actual</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>]</kbd></td>
+        <td class="cs-desc">descendente, por la <i>columna actual</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g[</kbd></td>
+        <td class="cs-desc">ascendente, por las <i>columnas claves</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g]</kbd></td>
+        <td class="cs-desc">descendente, por las <i>columnas claves</i></td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Filtrar</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>"</kbd></td>
+        <td class="cs-desc">Crear una hoja con las filas seleccionadas</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gz"</kbd></td>
+        <td class="cs-desc">Crear una copia "profunda" de las filas seleccionadas</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>R</kbd> + <i>n</i></td>
+        <td class="cs-desc">Crear una hoja que contiene <i>n</i> filas elegidas al azar</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Resumir los datos</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>F</kbd></td>
+        <td class="cs-desc">Crear una tabla de frecuencias de la <i>columna actual</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gF</kbd></td>
+        <td class="cs-desc">Crear una tabla de frecuencias de las <i>columnas claves</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>+</kbd> + <i>aggregator</i></td>
+        <td class="cs-desc">Añadir un agregador a la columna</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>z+</kbd> + <i>agregador</i></td>
+        <td class="cs-desc">Calcular (una vez) el promedio, la suma, etc.</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>I</kbd></td>
+        <td class="cs-desc">Crear una hoja que mostra estadísticas básica de cada columna</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Crear nuevas columnas</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>=</kbd> + <i>expr</i></td>
+        <td class="cs-desc">Crear una columna que mostra el resultado de la <i>expr</i> en Python</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>:</kbd> + <i>regex</i></td>
+        <td class="cs-desc">Crear columna(s) dividiendo la columna actual con <i>regex</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>;</kbd> + <i>regex</i></td>
+        <td class="cs-desc">Crear columna(s) extrayendo los grupos <i>regex</i> de la columna actual</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>'</kbd></td>
+        <td class="cs-desc">Crear una copia "congelada" de la columna actual</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Cambiar la forma de los datos</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>W</kbd></td>
+        <td class="cs-desc">Crear una tabla pivot, usando las columnas claves como filas y la columna actual como valores</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>M</kbd></td>
+        <td class="cs-desc">Crear una hoja "fundido", respetando las columnas claves</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>T</kbd></td>
+        <td class="cs-desc">Crear un hoja transpuesta intercambiando las columnas y filas</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Editar las celdas</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>e</kbd></td>
+        <td class="cs-desc">Empezar a editar la celda actual</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>Enter</kbd></td>
+        <td class="cs-desc">Terminar la edición</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>Ctrl-c</kbd></td>
+        <td class="cs-desc">Cancelar la edición</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>Ctrl-a</kbd></td>
+        <td class="cs-desc">Ir al pricipio de la celda</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>Ctrl-e</kbd></td>
+        <td class="cs-desc">Ir al final de la celda</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>Ctrl-k</kbd></td>
+        <td class="cs-desc">Borrar la parte que sigue al cursor</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Misc.</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>Ctrl-^</kbd></td>
+        <td class="cs-desc">Saltar entre la hoja actual y anterior</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>!</kbd></td>
+        <td class="cs-desc">Marcar la columna actual como "clave"</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>Space</kbd></td>
+        <td class="cs-desc">Abrir la entrada para comandos de "nombres largos"</td>
+    </tr>
+    
+</tbody>
+</table>
+
+</div>
+<div id="pdf-footer"><a href="https://jsvine.github.io/visidata-cheat-sheet">jsvine.github.io/visidata-cheat-sheet</a></div>
+</main>
+</body>
+</html>

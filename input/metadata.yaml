@@ -1,0 +1,15 @@
+en:
+  title: A VisiData Cheat Sheet 
+  description: A cheat sheet for VisiData commands
+  authors:
+    - Jeremy Singer-Vine
+  pdf_link_text: Download the One-Page PDF
+  other_lang_text: Other languages
+
+es:
+  title: Un "Cheat Sheet" Para VisiData
+  description: Un guía de una página para recordar los comandos de VisiData
+  authors:
+    - Jeremy Singer-Vine
+  pdf_link_text: Descargar la Versión PDF
+  other_lang_text: Otras idiomas
