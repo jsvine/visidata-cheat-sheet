@@ -1,218 +1,266 @@
 - title:
     en: <i>A VisiData Cheat Sheet</i>
     es: <i>Un "Cheat Sheet" Para VisiData</i>
+    it: <i>Un "Cheat Sheet" per VisiData</i>
   commands:
   - cmd:
       en: Version
       es: Versión
+      it: Versione
     desc:
       en: VisiData v1.5.2
   - cmd:
       en: Updated
       es: Actualizado
+      it: Aggiornato
     desc:
       en: '2019-07-07'
       es: '2019-07-07'
+      it: '2019-07-07'
   - cmd:
       en: More info
       es: Más info
+      it: Maggiori informazioni
     desc:
       en: <a href="https://visidata.org/">visidata.org</a><br/><a href="https://jsvine.github.io/intro-to-visidata/">jsvine.github.io/intro-to-visidata</a>
 - title:
     en: Getting out of trouble
     es: Salir de problemas
+    it: Risolvere problemi
   commands:
   - cmd:
       en: <kbd>Ctrl-c</kbd>
     desc:
       en: Abort the current command
       es: Abortar el comando actual
+      it: Annulla il comando corrente
   - cmd:
       en: <kbd>Ctrl-q</kbd>
     desc:
       en: Force-quit VisiData entirely
       es: Forzar la salida (enteramente)
+      it: Forzare la chiusura di VisiData
   - cmd:
       en: <kbd>q</kbd>
     desc:
       en: Quit the current VisiData "sheet"
       es: Salir la hoja ("sheet") actual
+      it: Chiudere il foglio corrente di VisiData
   - cmd:
       en: <kbd>Ctrl-h</kbd>
     desc:
       en: Display the "Quick Reference Guide"
       es: Mostrar el manual rápido ("Quick Reference Guide")
+      it: Mostra la guida rapida di riferimento ("Quick Reference Guide")
   - cmd:
       en: <kbd>z</kbd> + <kbd>Ctrl-h</kbd>
     desc:
       en: Display list of commands available on the current sheet
       es: Mostrar la lista de comandos (para la hoja actual)
+      it: Mostra la lista dei comandi disponibili per il foglio corrente
 - title:
     en: Input/output
     es: Entrada/salida
+    it: Input/output
   commands:
   - cmd:
       en: <kbd>o</kbd> + <i>filename</i>
       es: <kbd>o</kbd> + <i>archivo</i>
+      it: <kbd>o</kbd> + <i>nomefile</i>
     desc:
       en: Open a file
       es: Abrir un archivo
+      it: Apri un file
   - cmd:
       en: <kbd>Ctrl-s</kbd> + <i>filename</i>
       es: <kbd>Ctrl-s</kbd> + <i>archivo</i>
+      it: <kbd>Ctrl-s</kbd> + <i>nomefile</i>
     desc:
       en: Save current sheet to <i>filename</i>
       es: Guardar la hoja actual a <i>archivo</i>
+      it: Salva il foglio corrente come <i>nomefile</i>
   - cmd:
       en: <kbd>g</kbd> + <kbd>Ctrl-s</kbd> + <i>filename</i>
       es: <kbd>g</kbd> + <kbd>Ctrl-s</kbd> + <i>archivo</i>
+      it: <kbd>g</kbd> + <kbd>Ctrl-s</kbd> + <i>nomefile</i>
     desc:
       en: Save all sheets to <i>filename</i>
       es: Guardar todas las hojas a <i>archivo</i>
+      it: Salva tutti i fogli come <i>nomefile</i>
   - cmd:
       en: <kbd>gY</kbd>
     desc:
       en: Copy sheet (or selected rows) to clipboard
       es: Copiar la hoja (o las filas sel.) al portapapeles
+      it: Copia foglio (o righe selezionate) negli appunti
   - cmd:
       en: <kbd>gzY</kbd>
     desc:
       en: Copy column (or selected rows for column) to clipboard
       es: Copiar la columna (o las filas sel. en la columna) al portapapeles
+      it: Copia colonna (o righe selezionate per colonna) negli appunti
 - title:
     en: Metasheets
     es: Metahojas
+    it: Metasheets
   commands:
   - cmd:
       en: <kbd>S</kbd>
     desc:
       en: Sheets Sheet
       es: La hoja de hojas ("Sheets Sheet")
+      it: Foglio dei fogli ("Sheets Sheet")
   - cmd:
       en: <kbd>gS</kbd>
     desc:
       en: Sheets Graveyard
       es: El cementerio de hojas ("Sheets Graveyard")
+      it: Cimitero dei fogli ("Sheets Graveyard")
   - cmd:
       en: <kbd>C</kbd>
     desc:
       en: Columns Sheet
       es: La hoja de columnas
+      it: Foglio delle colonne
   - cmd:
       en: <kbd>O</kbd>
     desc:
       en: Gobal options sheet
       es: La hoja de las opciones globales
+      it: Foglio delle opzioni globali
   - cmd:
       en: <kbd>zO</kbd>
     desc:
       en: This-sheet options sheet
       es: Las opciones de la hoja actual
+      it: Foglio delle opzioni del foglio corrente
 - title:
     en: Move cursor ...
     es: Mover el cursor ...
+    it: Sposta il cursore ...
   commands:
   - cmd:
       en: <kbd>gj</kbd>
     desc:
       en: to the last row
       es: a la última fila
+      it: all'ultima riga
   - cmd:
       en: <kbd>gk</kbd>
     desc:
       en: to the first row
       es: a la primera fila
+      it: alla prima riga
   - cmd:
       en: <kbd>gh</kbd>
     desc:
       en: to the leftmost column
       es: a la columna más a la izquierda
+      it: alla colonna più a sinistra
   - cmd:
       en: <kbd>gl</kbd>
     desc:
       en: to the rightmost column
       es: a la columna más a la derecha
+      it: alla colonna più a destra
   - cmd:
       en: <kbd>Ctrl-F</kbd>
     desc:
       en: one page down (forward)
       es: una página hacia abajo
+      it: una pagina in basso (avanti)
   - cmd:
       en: <kbd>Ctrl-B</kbd>
     desc:
       en: one page up (backward)
       es: una página hacia arriba
+      it: una pagina su (indietro)
 - title:
     en: Moving via search
     es: Ir mediante la búsqueda
+    it: Spostamento tramite ricerca
   commands:
   - cmd:
       en: <kbd>/</kbd> + <i>regex</i>
     desc:
       en: Search forward in <i>current</i> column
       es: Buscar hacia adelante en la columna <i>actual</i>
+      it: Cerca in avanti nella colonna <i>corrente</i>
   - cmd:
       en: <kbd>?</kbd> + <i>regex</i>
     desc:
       en: Search backward in <i>current</i> column
       es: Buscar hacia atrás en la columna <i>actual</i>
+      it: Cerca indietro nella colonna <i>corrente</i>
   - cmd:
       en: <kbd>g/</kbd> + <i>regex</i>
     desc:
       en: Search forward in <i>all</i> columns
       es: Buscar hacia adelante en todas las columnas
+      it: Cerca in avanti in <i>tutte</i> le colonne
   - cmd:
       en: <kbd>g?</kbd> + <i>regex</i>
     desc:
       en: Search backward in <i>all</i> columns
       es: Buscar hacia atrás en todas las columnas
+      it: Cerca indietro in <i>tutte</i> le colonne
   - cmd:
       en: <kbd>n</kbd>
     desc:
       en: Move to next matching row
       es: Ir a la siguiente fila coincidente
+      it: Passa alla riga corrispondente successiva
   - cmd:
       en: <kbd>N</kbd>
     desc:
       en: Move to previous matching row
       es: Ir a la anterior fila coincidente
+      it: Passa alla riga corrispondente precedente
 - title:
     en: Basic row selection
     es: Selección básica de linéas
+    it: Selezione di base di righe
   commands:
   - cmd:
       en: <kbd>s</kbd>
     desc:
       en: Select the current row
       es: Seleccionar la fila actual
+      it: Seleziona la riga corrente
   - cmd:
       en: <kbd>u</kbd>
     desc:
       en: Unselect the current row
       es: Deseleccionar la fila actual
+      it: Deseleziona la riga corrente
   - cmd:
       en: <kbd>t</kbd>
     desc:
       en: Toggle the current row between selected/unselected
       es: Cambiar la fila actual entre de/seleccionada
+      it: Inverti la riga corrente tra selezionata / non selezionata
   - cmd:
       en: <kbd>gs</kbd>
     desc:
       en: Select all rows
       es: Seleccionar todas las filas
+      it: Seleziona tutte le righe
   - cmd:
       en: <kbd>gu</kbd>
     desc:
       en: Unselect all rows
       es: Deseleccionar todas las filas
+      it: Deseleziona tutte le righe
   - cmd:
       en: <kbd>gt</kbd>
     desc:
       en: Toggle all rows between selected/unselected
       es: Cambiar todas las filas entre de/seleccionada
+      it: Inverti tutte le righe tra selezionate / non selezionate
 - title:
     en: Advanced row selection
     es: Selección avanzada de linéas
+    it: Selezione avanzata delle righe
   commands:
   - cmd:
       en: <kbd>|</kbd> + <i>regex</i>
@@ -262,12 +310,12 @@
       en: <kbd>J</kbd>
     desc:
       en: Move row up
-      es: Mover hacia arriba la fila 
+      es: Mover hacia arriba la fila
   - cmd:
       en: <kbd>K</kbd>
     desc:
       en: Move row down
-      es: Mover hacia abajo la fila 
+      es: Mover hacia abajo la fila
   - cmd:
       en: <kbd>H</kbd>
     desc:
@@ -386,7 +434,7 @@
       es: descendente, por las <i>columnas claves</i>
 - title:
     en: Filtering
-    es: Filtrar 
+    es: Filtrar
   commands:
   - cmd:
       en: <kbd>"</kbd>
@@ -441,7 +489,7 @@
       en: <kbd>=</kbd> + <i>expr</i>
     desc:
       en: Create a new column from a Python <i>expr</i> evaluated against each row
-      es: Crear una columna que mostra el resultado de la <i>expr</i> en Python 
+      es: Crear una columna que mostra el resultado de la <i>expr</i> en Python
   - cmd:
       en: <kbd>:</kbd> + <i>regex</i>
     desc:
