@@ -309,7 +309,7 @@
     desc:
       en: Unselect all rows where <i>expr</i> evaluates to <code>True</code>
       es: Deseleccionar las filas donde <i>expr</i> se evalúa como <code>True</code>
-      es: Deseleziona tutte le righe in cui <i>expr</i> restituisce <code>True</code>
+      it: Deseleziona tutte le righe in cui <i>expr</i> restituisce <code>True</code>
 - title:
     en: Shifting rows / columns
     es: Mover las filas y columnas
@@ -407,197 +407,239 @@
     desc:
       en: Adjust the width of <strong>current column</strong> to fit text in all visible rows
       es: Ajustar la <strong>columna actual</strong> para encajar el texto de las filas visibles
+      it: Regola la larghezza della <strong>colonna corrente</strong> per adattarla al testo delle righe visibili
   - cmd:
       en: <kbd>g_</kbd>
     desc:
       en: Adjust the width of <strong>all columns</strong> to fit text in all visible rows
       es: Ajustar <strong>todas las columnas</strong> para encajar el texto de las filas visibles
+      it: Regola la larghezza di <strong>tutte le colonne</strong> per adattarla al testo delle righe visibili
   - cmd:
       en: <kbd>z_</kbd> + <i>n</i>
     desc:
       en: Set the current column's width to <i>n</i> characters
       es: Cambiar la anchura de la columna actual a <i>n</i> caracteres
+      it: Imposta la larghezza della colonna corrente a <i>n</i> caratteri
   - cmd:
       en: <kbd>-</kbd>
     desc:
       en: Hide the current column by setting its width to <code>0</code>
       es: Ocultar la columna actual cambiando su anchura a <code>0</code>
+      it: Nascondi la colonna corrente impostando la sua larghezza a <code>0</code>
   - cmd:
       en: <kbd>gv</kbd>
     desc:
       en: Unhide all columns
       es: Revelar todas las columnas
+      it: Scopri tutte le colonne
   - cmd:
       en: <kbd>z-</kbd>
     desc:
       en: Shrink the current column's width in half
       es: Reducir la anchura de la columna actual a la mitad
+      it: Riduci la larghezza della colonna corrente alla sua metà
 - title:
     en: Sort rows ...
     es: Ordenar las filas ...
+    it: Ordina le righe ...
   commands:
   - cmd:
       en: <kbd>[</kbd>
     desc:
       en: in ascending order of <i>current column</i>
       es: ascendente, por la <i>columna actual</i>
+      it: la <i>colonna corrente</i> in ordine ascendente
   - cmd:
       en: <kbd>]</kbd>
     desc:
       en: in descending order of <i>current column</i>
       es: descendente, por la <i>columna actual</i>
+      it: la <i>colonna corrente</i> in ordine decrescente
   - cmd:
       en: <kbd>g[</kbd>
     desc:
       en: in ascending order of <i>key columns</i>
       es: ascendente, por las <i>columnas claves</i>
+      it: <i>le colonne chiave</i>, in ordine ascendente
   - cmd:
       en: <kbd>g]</kbd>
     desc:
       en: in descending order of <i>key columns</i>
       es: descendente, por las <i>columnas claves</i>
+      it: <i>le colonne chiave</i>, in ordine decrescente
 - title:
     en: Filtering
     es: Filtrar
+    it: Filtrare
   commands:
   - cmd:
       en: <kbd>"</kbd>
     desc:
       en: Create new sheet of selected rows
       es: Crear una hoja con las filas seleccionadas
+      it: Crea un nuovo foglio dalle righe selezionate
   - cmd:
       en: <kbd>gz"</kbd>
     desc:
       en: Create new sheet with "deep copy" of selected rows
       es: Crear una copia "profunda" de las filas seleccionadas
+      it: Crea una "deep copy" delle righe selezionate
   - cmd:
       en: <kbd>R</kbd> + <i>n</i>
     desc:
       en: Create new sheet containing <i>n</i> randomly chosen rows
       es: Crear una hoja que contiene <i>n</i> filas elegidas al azar
+      it: Crea un nuovo foglio contenente <i>n</i> righe selezionate a caso
 - title:
     en: Summarizing data
     es: Resumir los datos
+    it: Riepilogo dei dati
   commands:
   - cmd:
       en: <kbd>F</kbd>
     desc:
       en: Create frequency table of <i>current column</i>
       es: Crear una tabla de frecuencias de la <i>columna actual</i>
+      it: Crea una tabella delle frequenze della <i>colonna corrente</i>
   - cmd:
       en: <kbd>gF</kbd>
     desc:
       en: Create frequency table of <i>key columns</i>
       es: Crear una tabla de frecuencias de las <i>columnas claves</i>
+      it: Crea una tabella delle frequenze delle <i>colonne chiave</i>
   - cmd:
       en: <kbd>+</kbd> + <i>aggregator</i>
     desc:
       en: Add aggregator to column
       es: Añadir un agregador a la columna
+      it: Aggiungi un aggregatore alla colonna
   - cmd:
       en: <kbd>z+</kbd> + <i>aggregator</i>
       es: <kbd>z+</kbd> + <i>agregador</i>
+      it: <kbd>z+</kbd> + <i>aggregatore</i>
     desc:
       en: Calculate one-time aggregation of column
       es: Calcular (una vez) el promedio, la suma, etc.
+      it: Calcola il risultato dell'aggregatore sui valori delle righe selezionate per la colonna corrente
   - cmd:
       en: <kbd>I</kbd>
     desc:
       en: Create a "Describe Sheet," with summary stats for each column
       es: Crear una hoja que mostra estadísticas básica de cada columna
+      it: Crea un "Foglio Descrittivo" con le statistiche di riepilogo per ogni colonna
 - title:
     en: Creating new columns
     es: Crear nuevas columnas
+    it: Creare nuove colonne
   commands:
   - cmd:
       en: <kbd>=</kbd> + <i>expr</i>
     desc:
       en: Create a new column from a Python <i>expr</i> evaluated against each row
       es: Crear una columna que mostra el resultado de la <i>expr</i> en Python
+      it: Crea una nuova colonna da una <i>Python expression</i> valutata su ogni riga
   - cmd:
       en: <kbd>:</kbd> + <i>regex</i>
     desc:
       en: Create new column(s) by splitting current column on <i>regex</i>
       es: Crear columna(s) dividiendo la columna actual con <i>regex</i>
+      it: Crea nuova/e colonna/e dividendo la colonna corrente basandosi su una <i>regex</i>
   - cmd:
       en: <kbd>;</kbd> + <i>regex</i>
     desc:
       en: Create new column(s) by extracting <i>regex</i> groups from current column
       es: Crear columna(s) extrayendo los grupos <i>regex</i> de la columna actual
+      it: Crea nuova/e colonna/e estraendo gruppi di <i>regex</i> dalla colonna corrente
   - cmd:
       en: <kbd>'</kbd>
     desc:
       en: Create "frozen" copy of current column, with all cells evaluated
       es: Crear una copia "congelada" de la columna actual
+      it: Crea una copia "congelata" della colonna corrente
 - title:
     en: Reshaping data
     es: Cambiar la forma de los datos
+    it: Rimodellamento dei dati
   commands:
   - cmd:
       en: <kbd>W</kbd>
     desc:
       en: Create pivot table sheet, with key column(s) as rows and current column as values
       es: Crear una tabla pivot, usando las columnas claves como filas y la columna actual como valores
+      it: Crea una tabella pivot, con le colonna/e chiave come righe e la colonna corrente come valori
   - cmd:
       en: <kbd>M</kbd>
     desc:
       en: Create "melted" sheet, with key columns as non-melted values
       es: Crear una hoja "fundido", respetando las columnas claves
+      it: Esegui l'inverso del pivot, sulle colonne non chiave trasformandole in coppie chiave/valore
   - cmd:
       en: <kbd>T</kbd>
     desc:
       en: Create a transposed sheet, where columns become rows and v.v.
       es: Crear un hoja transpuesta intercambiando las columnas y filas
+      it: Crea un foglio trasposto, dove le colonne diventano righe e viceversa
 - title:
     en: Editing cells
     es: Editar las celdas
+    it: Modifica delle celle
   commands:
   - cmd:
       en: <kbd>e</kbd>
     desc:
       en: Begin editing current cell
       es: Empezar a editar la celda actual
+      it: Modifica la cella corrente
   - cmd:
       en: <kbd>Enter</kbd>
     desc:
       en: Finish editing
       es: Terminar la edición
+      it: Termina la modifica
   - cmd:
       en: <kbd>Ctrl-c</kbd>
     desc:
       en: Cancel editing
       es: Cancelar la edición
+      it: Annulla la modifica
   - cmd:
       en: <kbd>Ctrl-a</kbd>
     desc:
       en: Move to beginning of cell
       es: Ir al pricipio de la celda
+      it: Sposta a inizio cella
   - cmd:
       en: <kbd>Ctrl-e</kbd>
     desc:
       en: Move to end of cell
       es: Ir al final de la celda
+      it: Sposta a fine cella
   - cmd:
       en: <kbd>Ctrl-k</kbd>
     desc:
       en: Clear contents from cursor's position to end of line
       es: Borrar la parte que sigue al cursor
+      it: Cancella i contenuti dalla posizione attuale sino a fine linea
 - title:
     en: Misc.
     es: Misc.
+    it: Varie
   commands:
   - cmd:
       en: <kbd>Ctrl-^</kbd>
     desc:
       en: Toggle between current and previous sheet
       es: Saltar entre la hoja actual y anterior
+      it: Passa dal foglio corrente a quello precedente
   - cmd:
       en: <kbd>!</kbd>
     desc:
       en: Make current column a "key" column
       es: Marcar la columna actual como "clave"
+      it: 	Rendi la colonna attuale una colonna "chiave"
   - cmd:
       en: <kbd>Space</kbd>
     desc:
       en: Open long-name command prompt
       es: Abrir la entrada para comandos de "nombres largos"
+      it: Apri il prompt esteso dei comandi
