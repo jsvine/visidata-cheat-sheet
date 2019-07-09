@@ -13,3 +13,11 @@ es:
     - Jeremy Singer-Vine
   pdf_link_text: Descargar la Versión PDF
   other_lang_text: Otras idiomas
+
+it:
+  title: VisiData Cheat Sheet
+  description: Un cheat sheet per i comandi di VisiData
+  authors:
+    - Andrea Borruso
+  pdf_link_text: Scarica la versione in PDF
+  other_lang_text: Altri linguaggi
