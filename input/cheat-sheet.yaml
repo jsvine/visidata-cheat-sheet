@@ -209,13 +209,13 @@
     desc:
       en: Move to next matching row
       es: Ir a la siguiente fila coincidente
-      it: Passa alla riga corrispondente successiva
+      it: Riga corrispondente successiva
   - cmd:
       en: <kbd>N</kbd>
     desc:
       en: Move to previous matching row
       es: Ir a la anterior fila coincidente
-      it: Passa alla riga corrispondente precedente
+      it: Riga corrispondente precedente
 - title:
     en: Basic row selection
     es: Selección básica de linéas
@@ -267,25 +267,25 @@
     desc:
       en: Select all rows where <i>regex</i> matches the <strong>current column</strong>
       es: Seleccionar las filas donde <i>regex</i> coincide con la <strong>columna actual</strong>
-      it: Seleziona le righe in cui c'è corrispondenza della <i>regex</i> nella <strong>colonna corrente</strong>
+      it: Seleziona le righe con matching della <i>regex</i> nella <strong>colonna corrente</strong>
   - cmd:
       en: <kbd>\</kbd> + <i>regex</i>
     desc:
       en: Unselect all rows where <i>regex</i> matches the <strong>current column</strong>
       es: Deseleccionar las filas donde <i>regex</i> coincide con la <strong>columna actual</strong>
-      it: Deseleziona le righe in cui c'è corrispondenza della <i>regex</i> nella <strong>colonna corrente</strong>
+      it: Deseleziona le righe  della <i>regex</i> nella <strong>colonna corrente</strong>
   - cmd:
       en: <kbd>g|</kbd> + <i>regex</i>
     desc:
       en: Select all rows where <i>regex</i> matches <strong>any column</strong>
       es: Seleccionar las filas donde <i>regex</i> coincide con <strong>cualquier columna</strong>
-      it: Seleziona le righe in cui c'è corrispondenza della <i>regex</i> in <strong>qualsiasi colonna</strong>
+      it: Seleziona le righe con matching della <i>regex</i> in <strong>qualsiasi colonna</strong>
   - cmd:
       en: <kbd>g\</kbd> + <i>regex</i>
     desc:
       en: Unselect all rows where <i>regex</i> matches <strong>any</strong> column
       es: Deseleccionar las filas donde <i>regex</i> coincide con <strong>cualquier columna</strong>
-      it: Deseleziona le righe in cui c'è corrispondenza della <i>regex</i> in <strong>qualsiasi colonna</strong>
+      it: Deseleziona le righe con matching della <i>regex</i> in <strong>qualsiasi colonna</strong>
   - cmd:
       en: <kbd>,</kbd>
     desc:
@@ -297,7 +297,7 @@
     desc:
       en: Select all rows where <strong>any column</strong> matches the current cell
       es: Sel. las filas donde <strong>cualquier col.</strong> coincide con la celda actual
-      it: Selezione le righe che corrispondono alla cella corrente in <strong>qualsiasi colonna</strong>
+      it: Seleziona le righe che corrispondono alla cella corrente in <strong>qualsiasi colonna</strong>
   - cmd:
       en: <kbd>z|</kbd> + <i>expr</i>
     desc:
@@ -520,13 +520,13 @@
     desc:
       en: Calculate one-time aggregation of column
       es: Calcular (una vez) el promedio, la suma, etc.
-      it: Calcola il risultato dell'aggregatore sui valori delle righe selezionate per la colonna corrente
+      it: Calcola l'aggregazione della colonna corrente
   - cmd:
       en: <kbd>I</kbd>
     desc:
       en: Create a "Describe Sheet," with summary stats for each column
       es: Crear una hoja que mostra estadísticas básica de cada columna
-      it: Crea un "Foglio Descrittivo" con le statistiche di riepilogo per ogni colonna
+      it: Crea un foglio con le statistiche di riepilogo di ogni colonna
 - title:
     en: Creating new columns
     es: Crear nuevas columnas
@@ -543,7 +543,7 @@
     desc:
       en: Create new column(s) by splitting current column on <i>regex</i>
       es: Crear columna(s) dividiendo la columna actual con <i>regex</i>
-      it: Crea nuova/e colonna/e dividendo la colonna corrente in base a una <i>regex</i>
+      it: Crea nuova/e colonna/e dividendo la corrente in base a una <i>regex</i>
   - cmd:
       en: <kbd>;</kbd> + <i>regex</i>
     desc:
