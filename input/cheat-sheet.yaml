@@ -20,9 +20,9 @@
   - cmd:
       en: More info
       es: Más info
-      it: Maggiori informazioni
+      it: Maggiori info
     desc:
-      en: <a href="https://visidata.org/">visidata.org</a><br/><a href="https://jsvine.github.io/intro-to-visidata/">jsvine.github.io/intro-to-visidata</a>
+      en: <a href="https://visidata.org/">visidata.org</a><br/><a href="https://jsvine.github.io/intro-to-visidata/">jsvine.github.io/intro-to-visidata</a><br/><a href="https://github.com/ondata/guidaVisiData/">github.com/ondata/guidaVisiData/</a>
 - title:
     en: Getting out of trouble
     es: Salir de problemas
