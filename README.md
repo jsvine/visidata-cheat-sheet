@@ -6,6 +6,7 @@ The cheat sheet is currently available in the following languages:
 
 - English
 - Spanish
+- Italian
 
 ## Creating New Translations
 
@@ -20,6 +21,8 @@ To add a translation, follow these steps:
 - Add add a corresponding section to the `input/metadata.yaml` file, following the pattern of existing translations. Add your name as an additional author.
 
 - In `input/cheat-sheet.yaml`, add your translations (following the existing examples) of as many section titles, commands, and descriptions as you see fit. If a translation is not provided for any particular part, the built HTML and PDF will use the English phrasing.
+
+- If possible, run the build processs below. Check whether the PDF version fits entirely on one page. If not, attempt to shorten the translations until it does.
 
 ## Build Process
 
