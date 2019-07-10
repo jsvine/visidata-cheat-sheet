@@ -4,9 +4,9 @@ This repository contains the source files for [A VisiData Cheat Sheet](https://j
 
 The cheat sheet is currently available in the following languages:
 
-- English
-- Spanish
-- Italian
+- [English](https://jsvine.github.io/visidata-cheat-sheet/en/)
+- [Spanish](https://jsvine.github.io/visidata-cheat-sheet/es/)
+- [Italian](https://jsvine.github.io/visidata-cheat-sheet/it/) (by [Associazione onData](https://ondata.it/))
 
 ## Creating New Translations
 
