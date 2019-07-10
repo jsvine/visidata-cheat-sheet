@@ -39,25 +39,25 @@
     desc:
       en: Force-quit VisiData entirely
       es: Forzar la salida (enteramente)
-      it: Forzare la chiusura di VisiData
+      it: Forza la chiusura di VisiData
   - cmd:
       en: <kbd>q</kbd>
     desc:
       en: Quit the current VisiData "sheet"
       es: Salir la hoja ("sheet") actual
-      it: Chiudere il foglio corrente di VisiData
+      it: Chiudi il foglio corrente di VisiData
   - cmd:
       en: <kbd>Ctrl-h</kbd>
     desc:
       en: Display the "Quick Reference Guide"
       es: Mostrar el manual rápido ("Quick Reference Guide")
-      it: Mostra la guida rapida di riferimento ("Quick Reference Guide")
+      it: Mostra la guida rapida di riferimento
   - cmd:
       en: <kbd>z</kbd> + <kbd>Ctrl-h</kbd>
     desc:
       en: Display list of commands available on the current sheet
       es: Mostrar la lista de comandos (para la hoja actual)
-      it: Mostra la lista dei comandi disponibili per il foglio corrente
+      it: Mostra la lista dei comandi per il foglio corrente
 - title:
     en: Input/output
     es: Entrada/salida
@@ -109,13 +109,13 @@
     desc:
       en: Sheets Sheet
       es: La hoja de hojas ("Sheets Sheet")
-      it: Foglio dei fogli ("Sheets Sheet")
+      it: Foglio dei fogli
   - cmd:
       en: <kbd>gS</kbd>
     desc:
       en: Sheets Graveyard
       es: El cementerio de hojas ("Sheets Graveyard")
-      it: Cimitero dei fogli ("Sheets Graveyard")
+      it: Cimitero dei fogli
   - cmd:
       en: <kbd>C</kbd>
     desc:
@@ -209,13 +209,13 @@
     desc:
       en: Move to next matching row
       es: Ir a la siguiente fila coincidente
-      it: Passa alla riga corrispondente successiva
+      it: Riga corrispondente successiva
   - cmd:
       en: <kbd>N</kbd>
     desc:
       en: Move to previous matching row
       es: Ir a la anterior fila coincidente
-      it: Passa alla riga corrispondente precedente
+      it: Riga corrispondente precedente
 - title:
     en: Basic row selection
     es: Selección básica de linéas
@@ -238,7 +238,7 @@
     desc:
       en: Toggle the current row between selected/unselected
       es: Cambiar la fila actual entre de/seleccionada
-      it: Inverti la riga corrente tra selezionata / non selezionata
+      it: Inverti la riga corrente tra selezionata e  non
   - cmd:
       en: <kbd>gs</kbd>
     desc:
@@ -256,7 +256,7 @@
     desc:
       en: Toggle all rows between selected/unselected
       es: Cambiar todas las filas entre de/seleccionada
-      it: Inverti tutte le righe tra selezionate / non selezionate
+      it: Inverti tutte le righe tra selezionate e non
 - title:
     en: Advanced row selection
     es: Selección avanzada de linéas
@@ -267,49 +267,49 @@
     desc:
       en: Select all rows where <i>regex</i> matches the <strong>current column</strong>
       es: Seleccionar las filas donde <i>regex</i> coincide con la <strong>columna actual</strong>
-      it: Seleziona tutte le righe in cui c'è corrispondenza della <i>regex</i> nella <strong>colonna corrente</strong>
+      it: Le righe con matching della <i>regex</i> nella <strong>colonna corrente</strong>
   - cmd:
       en: <kbd>\</kbd> + <i>regex</i>
     desc:
       en: Unselect all rows where <i>regex</i> matches the <strong>current column</strong>
       es: Deseleccionar las filas donde <i>regex</i> coincide con la <strong>columna actual</strong>
-      it: Deseleziona tutte le righe in cui c'è corrispondenza della <i>regex</i> nella <strong>colonna corrente</strong>
+      it: Deseleziona le righe  della <i>regex</i> nella <strong>colonna corrente</strong>
   - cmd:
       en: <kbd>g|</kbd> + <i>regex</i>
     desc:
       en: Select all rows where <i>regex</i> matches <strong>any column</strong>
       es: Seleccionar las filas donde <i>regex</i> coincide con <strong>cualquier columna</strong>
-      it: Seleziona tutte le righe in cui c'è corrispondenza della <i>regex</i> in <strong>qualsiasi colonna</strong>
+      it: Le righe con matching della <i>regex</i> in <strong>qualsiasi colonna</strong>
   - cmd:
       en: <kbd>g\</kbd> + <i>regex</i>
     desc:
       en: Unselect all rows where <i>regex</i> matches <strong>any</strong> column
       es: Deseleccionar las filas donde <i>regex</i> coincide con <strong>cualquier columna</strong>
-      it: Deseleziona tutte le righe in cui c'è corrispondenza della <i>regex</i> in <strong>qualsiasi colonna</strong>
+      it: Deseleziona le righe con matching della <i>regex</i> in <strong>qualsiasi colonna</strong>
   - cmd:
       en: <kbd>,</kbd>
     desc:
       en: Select all rows where the <strong>current column</strong> matches the current cell
       es: Sel. las filas donde la <strong>columna actual</strong> coincide con la celda actual
-      it: Seleziona tutte le righe in cui la <strong>colonna corrente</strong> corrisponde alla cella corrente
+      it: Le righe in cui la <strong>colonna corrente</strong> corrisponde alla cella corrente
   - cmd:
       en: <kbd>g,</kbd>
     desc:
       en: Select all rows where <strong>any column</strong> matches the current cell
       es: Sel. las filas donde <strong>cualquier col.</strong> coincide con la celda actual
-      it: Selezione tutte le righe che corrispondono al cella corrente in <strong>qualsiasi colonna</strong>
+      it: Le righe che corrispondono alla cella corrente in <strong>qualsiasi colonna</strong>
   - cmd:
       en: <kbd>z|</kbd> + <i>expr</i>
     desc:
       en: Select all rows where <i>expr</i> evaluates to <code>True</code>
       es: Seleccionar las filas donde <i>expr</i> se evalúa como <code>True</code>
-      it: Seleziona tutte le righe in cui <i>expr</i> restituisce <code>True</code>
+      it: Seleziona le righe in cui <i>expr</i> restituisce <code>True</code>
   - cmd:
       en: <kbd>z\</kbd> + <i>expr</i>
     desc:
       en: Unselect all rows where <i>expr</i> evaluates to <code>True</code>
       es: Deseleccionar las filas donde <i>expr</i> se evalúa como <code>True</code>
-      it: Deseleziona tutte le righe in cui <i>expr</i> restituisce <code>True</code>
+      it: Deseleziona le righe in cui <i>expr</i> restituisce <code>True</code>
 - title:
     en: Shifting rows / columns
     es: Mover las filas y columnas
@@ -390,13 +390,13 @@
     desc:
       en: Set names of all <i>unnamed</i> columns to the values in the current or selected row(s)
       es: Establecer los nombres de todas las columnas <i>sin nombre</i> como los valores en la fila actual (o sel.)
-      it: Imposta i nomi di tutte le colonne senza nome come i valori della riga corrente o selezionta(e)
+      it: Imposta i nomi delle colonne senza nome, con i valori della riga corrente o selezionta(e)
   - cmd:
       en: <kbd>gz^</kbd>
     desc:
       en: Set names of all <i>visible</i> columns to the values in the current or selected row(s)
       es: Establecer los nombres de <i>todas</i> las columnas como los valores en la fila actual (o sel.)
-      it: Imposta i nomi di tutte le colonne visibili con i valori delle riga corrente o selezionta(e)
+      it: Imposta i nomi delle colonne visibili con i valori delle riga corrente o selezionta(e)
 - title:
     en: Resizing columns
     es: Cambiar el tamaño de las columnas
@@ -407,25 +407,25 @@
     desc:
       en: Adjust the width of <strong>current column</strong> to fit text in all visible rows
       es: Ajustar la <strong>columna actual</strong> para encajar el texto de las filas visibles
-      it: Regola la larghezza della <strong>colonna corrente</strong> per adattarla al testo delle righe visibili
+      it: Larghezza della <strong>colonna corrente</strong> in base al testo delle righe visibili
   - cmd:
       en: <kbd>g_</kbd>
     desc:
       en: Adjust the width of <strong>all columns</strong> to fit text in all visible rows
       es: Ajustar <strong>todas las columnas</strong> para encajar el texto de las filas visibles
-      it: Regola la larghezza di <strong>tutte le colonne</strong> per adattarla al testo delle righe visibili
+      it: Larghezza di <strong>tutte le colonne</strong> in base al testo delle righe visibili
   - cmd:
       en: <kbd>z_</kbd> + <i>n</i>
     desc:
       en: Set the current column's width to <i>n</i> characters
       es: Cambiar la anchura de la columna actual a <i>n</i> caracteres
-      it: Imposta la larghezza della colonna corrente a <i>n</i> caratteri
+      it: Larghezza della colonna corrente pari a <i>n</i> caratteri
   - cmd:
       en: <kbd>-</kbd>
     desc:
       en: Hide the current column by setting its width to <code>0</code>
       es: Ocultar la columna actual cambiando su anchura a <code>0</code>
-      it: Nascondi la colonna corrente impostando la sua larghezza a <code>0</code>
+      it: Nascondi la colonna corrente, impostando la sua larghezza a <code>0</code>
   - cmd:
       en: <kbd>gv</kbd>
     desc:
@@ -437,7 +437,7 @@
     desc:
       en: Shrink the current column's width in half
       es: Reducir la anchura de la columna actual a la mitad
-      it: Riduci la larghezza della colonna corrente alla sua metà
+      it: Riduci della metà la larghezza della colonna corrente
 - title:
     en: Sort rows ...
     es: Ordenar las filas ...
@@ -489,7 +489,7 @@
     desc:
       en: Create new sheet containing <i>n</i> randomly chosen rows
       es: Crear una hoja que contiene <i>n</i> filas elegidas al azar
-      it: Crea un nuovo foglio contenente <i>n</i> righe selezionate a caso
+      it: Crea un nuovo foglio contenente <i>n</i> righe a caso
 - title:
     en: Summarizing data
     es: Resumir los datos
@@ -520,13 +520,13 @@
     desc:
       en: Calculate one-time aggregation of column
       es: Calcular (una vez) el promedio, la suma, etc.
-      it: Calcola il risultato dell'aggregatore sui valori delle righe selezionate per la colonna corrente
+      it: Calcola l'aggregazione della colonna corrente
   - cmd:
       en: <kbd>I</kbd>
     desc:
       en: Create a "Describe Sheet," with summary stats for each column
       es: Crear una hoja que mostra estadísticas básica de cada columna
-      it: Crea un "Foglio Descrittivo" con le statistiche di riepilogo per ogni colonna
+      it: Crea un foglio con le statistiche di riepilogo di ogni colonna
 - title:
     en: Creating new columns
     es: Crear nuevas columnas
@@ -543,7 +543,7 @@
     desc:
       en: Create new column(s) by splitting current column on <i>regex</i>
       es: Crear columna(s) dividiendo la columna actual con <i>regex</i>
-      it: Crea nuova/e colonna/e dividendo la colonna corrente basandosi su una <i>regex</i>
+      it: Crea nuova/e colonna/e dividendo la corrente in base a una <i>regex</i>
   - cmd:
       en: <kbd>;</kbd> + <i>regex</i>
     desc:
@@ -572,13 +572,13 @@
     desc:
       en: Create "melted" sheet, with key columns as non-melted values
       es: Crear una hoja "fundido", respetando las columnas claves
-      it: Esegui l'inverso del pivot, sulle colonne non chiave trasformandole in coppie chiave/valore
+      it: Crea un foglio "melted", trasformando le colonne non chiave in coppie chiave/valore
   - cmd:
       en: <kbd>T</kbd>
     desc:
       en: Create a transposed sheet, where columns become rows and v.v.
       es: Crear un hoja transpuesta intercambiando las columnas y filas
-      it: Crea un foglio trasposto, dove le colonne diventano righe e viceversa
+      it: Crea un foglio trasposto, dove le colonne diventano righe e v.v.
 - title:
     en: Editing cells
     es: Editar las celdas
@@ -619,7 +619,7 @@
     desc:
       en: Clear contents from cursor's position to end of line
       es: Borrar la parte que sigue al cursor
-      it: Cancella i contenuti dalla posizione attuale sino a fine linea
+      it: Cancella dalla posizione attuale sino a fine linea
 - title:
     en: Misc.
     es: Misc.
@@ -630,13 +630,13 @@
     desc:
       en: Toggle between current and previous sheet
       es: Saltar entre la hoja actual y anterior
-      it: Passa dal foglio corrente a quello precedente
+      it: Passa dal foglio corrente al precedente
   - cmd:
       en: <kbd>!</kbd>
     desc:
       en: Make current column a "key" column
       es: Marcar la columna actual como "clave"
-      it: 	Rendi la colonna attuale una colonna "chiave"
+      it: Rendi colonna "chiave" quella attuale
   - cmd:
       en: <kbd>Space</kbd>
     desc:
