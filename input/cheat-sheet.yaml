@@ -267,7 +267,7 @@
     desc:
       en: Select all rows where <i>regex</i> matches the <strong>current column</strong>
       es: Seleccionar las filas donde <i>regex</i> coincide con la <strong>columna actual</strong>
-      it: Seleziona le righe con matching della <i>regex</i> nella <strong>colonna corrente</strong>
+      it: Le righe con matching della <i>regex</i> nella <strong>colonna corrente</strong>
   - cmd:
       en: <kbd>\</kbd> + <i>regex</i>
     desc:
@@ -279,7 +279,7 @@
     desc:
       en: Select all rows where <i>regex</i> matches <strong>any column</strong>
       es: Seleccionar las filas donde <i>regex</i> coincide con <strong>cualquier columna</strong>
-      it: Seleziona le righe con matching della <i>regex</i> in <strong>qualsiasi colonna</strong>
+      it: Le righe con matching della <i>regex</i> in <strong>qualsiasi colonna</strong>
   - cmd:
       en: <kbd>g\</kbd> + <i>regex</i>
     desc:
@@ -291,13 +291,13 @@
     desc:
       en: Select all rows where the <strong>current column</strong> matches the current cell
       es: Sel. las filas donde la <strong>columna actual</strong> coincide con la celda actual
-      it: Seleziona le righe in cui la <strong>colonna corrente</strong> corrisponde alla cella corrente
+      it: Le righe in cui la <strong>colonna corrente</strong> corrisponde alla cella corrente
   - cmd:
       en: <kbd>g,</kbd>
     desc:
       en: Select all rows where <strong>any column</strong> matches the current cell
       es: Sel. las filas donde <strong>cualquier col.</strong> coincide con la celda actual
-      it: Seleziona le righe che corrispondono alla cella corrente in <strong>qualsiasi colonna</strong>
+      it: Le righe che corrispondono alla cella corrente in <strong>qualsiasi colonna</strong>
   - cmd:
       en: <kbd>z|</kbd> + <i>expr</i>
     desc:
@@ -407,19 +407,19 @@
     desc:
       en: Adjust the width of <strong>current column</strong> to fit text in all visible rows
       es: Ajustar la <strong>columna actual</strong> para encajar el texto de las filas visibles
-      it: Imposta la larghezza della <strong>colonna corrente</strong> in base al testo delle righe visibili
+      it: Larghezza della <strong>colonna corrente</strong> in base al testo delle righe visibili
   - cmd:
       en: <kbd>g_</kbd>
     desc:
       en: Adjust the width of <strong>all columns</strong> to fit text in all visible rows
       es: Ajustar <strong>todas las columnas</strong> para encajar el texto de las filas visibles
-      it: Imposta la larghezza di <strong>tutte le colonne</strong> in base al testo delle righe visibili
+      it: Larghezza di <strong>tutte le colonne</strong> in base al testo delle righe visibili
   - cmd:
       en: <kbd>z_</kbd> + <i>n</i>
     desc:
       en: Set the current column's width to <i>n</i> characters
       es: Cambiar la anchura de la columna actual a <i>n</i> caracteres
-      it: Imposta la larghezza della colonna corrente a <i>n</i> caratteri
+      it: Larghezza della colonna corrente pari a <i>n</i> caratteri
   - cmd:
       en: <kbd>-</kbd>
     desc:
