@@ -35,6 +35,10 @@ For each supported language, there are two build targets: an HTML page, and a on
 
 To run the full build: `make clean html; make pdfs`
 
+## Licensing
+
+All code in this repository is available under the [MIT License](https://opensource.org/licenses/MIT). All other text is available under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0) license.
+
 ## Questions?
 
 Feel free to file an issue or [contact Jeremy](https://www.jsvine.com/).
