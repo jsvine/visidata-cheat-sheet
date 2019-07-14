@@ -8,6 +8,12 @@ The cheat sheet is currently available in the following languages:
 - [Spanish](https://jsvine.github.io/visidata-cheat-sheet/es/)
 - [Italian](https://jsvine.github.io/visidata-cheat-sheet/it/) (by [Associazione onData](https://ondata.it/))
 
+### Other versions
+
+The following versions are based on this repository, but are not directly built through it:
+
+- [Italian A4 duplex version](https://github.com/ondata/guidaVisiData/blob/master/testo/risorse/cheat-sheet_DaStampareFronteRetro_di_GianniVitrano.pdf), by [Gianni Vitrano](https://twitter.com/gbvitrano)
+
 ## Creating New Translations
 
 To add a translation, follow these steps:
