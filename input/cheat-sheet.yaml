@@ -22,7 +22,8 @@
       es: Más info
       it: Maggiori info
     desc:
-      en: <a href="https://visidata.org/">visidata.org</a><br/><a href="https://github.com/ondata/guidaVisiData/">github.com/ondata/guidaVisiData</a><br/><a href="https://jsvine.github.io/intro-to-visidata/">jsvine.github.io/intro-to-visidata</a>
+      en: <a href="https://visidata.org/">visidata.org</a><br/><a href="https://jsvine.github.io/intro-to-visidata/">jsvine.github.io/intro-to-visidata</a>
+      it: <a href="https://visidata.org/">visidata.org</a><br/><a href="https://github.com/ondata/guidaVisiData/">github.com/ondata/guidaVisiData</a><br/><a href="https://jsvine.github.io/intro-to-visidata/">jsvine.github.io/intro-to-visidata</a>
 - title:
     en: Getting out of trouble
     es: Resolver problemas
@@ -38,7 +39,7 @@
       en: <kbd>Ctrl-q</kbd>
     desc:
       en: Force-quit VisiData entirely
-      es: Forzar salida de Visidata (por completo)
+      es: Forzar salida de VisiData (por completo)
       it: Forza la chiusura di VisiData
   - cmd:
       en: <kbd>q</kbd>
@@ -59,9 +60,9 @@
       es: Mostrar lista de comandos (para la hoja actual)
       it: Mostra la lista dei comandi per il foglio corrente
 - title:
-    en: Input/output
-    es: Entrada/salida
-    it: Input/output
+    en: Input / output
+    es: Entrada / salida
+    it: Input / output
   commands:
   - cmd:
       en: <kbd>o</kbd> + <i>filename</i>
@@ -236,9 +237,9 @@
   - cmd:
       en: <kbd>t</kbd>
     desc:
-      en: Toggle the current row between selected/unselected
+      en: Toggle the current row between selected / unselected
       es: Cambiar la fila actual entre seleccionada / deseleccionada
-      it: Inverti la riga corrente tra selezionata e  non
+      it: Inverti la riga corrente tra selezionata e non
   - cmd:
       en: <kbd>gs</kbd>
     desc:
@@ -254,8 +255,8 @@
   - cmd:
       en: <kbd>gt</kbd>
     desc:
-      en: Toggle all rows between selected/unselected
-      es: Invertir selección/ deselección de todas las filas
+      en: Toggle all rows between selected / unselected
+      es: Invertir selección / deselección de todas las filas
       it: Inverti tutte le righe tra selezionate e non
 - title:
     en: Advanced row selection
@@ -508,15 +509,15 @@
       es: Crear tabla de frecuencias de las <i>columnas claves</i>
       it: Crea una tabella delle frequenze delle <i>colonne chiave</i>
   - cmd:
-      en: <kbd>+</kbd> + <i>aggregator</i>
+      en: <kbd>+</kbd> + <i>aggr</i>
+      es: <kbd>+</kbd> + <i>agr</i>
     desc:
       en: Add aggregator to column
       es: Añadir un agregador a la columna
       it: Aggiungi un aggregatore alla colonna
   - cmd:
-      en: <kbd>z+</kbd> + <i>aggregator</i>
-      es: <kbd>z+</kbd> + <i>agregador</i>
-      it: <kbd>z+</kbd> + <i>aggregatore</i>
+      en: <kbd>z+</kbd> + <i>aggr</i>
+      es: <kbd>z+</kbd> + <i>agr</i>
     desc:
       en: Calculate one-time aggregation of column
       es: Calcular (una vez) el promedio, la suma, etc.
