@@ -15,7 +15,7 @@
       it: Aggiornato
     desc:
       en: '2019-07-07'
-      es: '2019-07-07'
+      es: '2019-08-04'
       it: '2019-07-07'
   - cmd:
       en: More info
@@ -25,38 +25,38 @@
       en: <a href="https://visidata.org/">visidata.org</a><br/><a href="https://github.com/ondata/guidaVisiData/">github.com/ondata/guidaVisiData</a><br/><a href="https://jsvine.github.io/intro-to-visidata/">jsvine.github.io/intro-to-visidata</a>
 - title:
     en: Getting out of trouble
-    es: Salir de problemas
+    es: Resolver problemas
     it: Risolvere problemi
   commands:
   - cmd:
       en: <kbd>Ctrl-c</kbd>
     desc:
       en: Abort the current command
-      es: Abortar el comando actual
+      es: Abortar comando actual
       it: Annulla il comando corrente
   - cmd:
       en: <kbd>Ctrl-q</kbd>
     desc:
       en: Force-quit VisiData entirely
-      es: Forzar la salida (enteramente)
+      es: Forzar salida de Visidata (por completo)
       it: Forza la chiusura di VisiData
   - cmd:
       en: <kbd>q</kbd>
     desc:
       en: Quit the current VisiData "sheet"
-      es: Salir la hoja ("sheet") actual
+      es: Salir de hoja ("sheet") actual
       it: Chiudi il foglio corrente di VisiData
   - cmd:
       en: <kbd>Ctrl-h</kbd>
     desc:
       en: Display the "Quick Reference Guide"
-      es: Mostrar el manual rápido ("Quick Reference Guide")
+      es: Mostrar la guía rápida ("Quick Reference Guide")
       it: Mostra la guida rapida di riferimento
   - cmd:
       en: <kbd>z</kbd> + <kbd>Ctrl-h</kbd>
     desc:
       en: Display list of commands available on the current sheet
-      es: Mostrar la lista de comandos (para la hoja actual)
+      es: Mostrar lista de comandos (para la hoja actual)
       it: Mostra la lista dei comandi per il foglio corrente
 - title:
     en: Input/output
@@ -77,7 +77,7 @@
       it: <kbd>Ctrl-s</kbd> + <i>nomefile</i>
     desc:
       en: Save current sheet to <i>filename</i>
-      es: Guardar la hoja actual a <i>archivo</i>
+      es: Guardar hoja actual a <i>nombre del archivo</i>
       it: Salva il foglio corrente come <i>nomefile</i>
   - cmd:
       en: <kbd>g</kbd> + <kbd>Ctrl-s</kbd> + <i>filename</i>
@@ -85,19 +85,19 @@
       it: <kbd>g</kbd> + <kbd>Ctrl-s</kbd> + <i>nomefile</i>
     desc:
       en: Save all sheets to <i>filename</i>
-      es: Guardar todas las hojas a <i>archivo</i>
+      es: Guardar todas las hojas a <i>nombre del archivo</i>
       it: Salva tutti i fogli come <i>nomefile</i>
   - cmd:
       en: <kbd>gY</kbd>
     desc:
       en: Copy sheet (or selected rows) to clipboard
-      es: Copiar la hoja (o las filas sel.) al portapapeles
+      es: Copiar hoja (o filas seleccionadas) al portapapeles
       it: Copia foglio (o righe selezionate) negli appunti
   - cmd:
       en: <kbd>gzY</kbd>
     desc:
       en: Copy column (or selected rows for column) to clipboard
-      es: Copiar la columna (o las filas sel. en la columna) al portapapeles
+      es: Copiar columna (o filas seleccionadas de la columna) al portapapeles
       it: Copia colonna (o righe selezionate per colonna) negli appunti
 - title:
     en: Metasheets
@@ -108,31 +108,31 @@
       en: <kbd>S</kbd>
     desc:
       en: Sheets Sheet
-      es: La hoja de hojas ("Sheets Sheet")
+      es: Hoja de hojas ("Sheets Sheet")
       it: Foglio dei fogli
   - cmd:
       en: <kbd>gS</kbd>
     desc:
       en: Sheets Graveyard
-      es: El cementerio de hojas ("Sheets Graveyard")
+      es: Cementerio de hojas ("Sheets Graveyard")
       it: Cimitero dei fogli
   - cmd:
       en: <kbd>C</kbd>
     desc:
       en: Columns Sheet
-      es: La hoja de columnas
+      es: Hoja de columnas
       it: Foglio delle colonne
   - cmd:
       en: <kbd>O</kbd>
     desc:
       en: Gobal options sheet
-      es: La hoja de las opciones globales
+      es: Hoja de opciones globales
       it: Foglio delle opzioni globali
   - cmd:
       en: <kbd>zO</kbd>
     desc:
       en: This-sheet options sheet
-      es: Las opciones de la hoja actual
+      es: Opciones de hoja actual
       it: Foglio delle opzioni del foglio corrente
 - title:
     en: Move cursor ...
@@ -155,29 +155,29 @@
       en: <kbd>gh</kbd>
     desc:
       en: to the leftmost column
-      es: a la columna más a la izquierda
+      es: a la última columna de la izquierda
       it: alla colonna più a sinistra
   - cmd:
       en: <kbd>gl</kbd>
     desc:
       en: to the rightmost column
-      es: a la columna más a la derecha
+      es: a la última columna de la derecha
       it: alla colonna più a destra
   - cmd:
       en: <kbd>Ctrl-F</kbd>
     desc:
       en: one page down (forward)
-      es: una página hacia abajo
+      es: una página hacia abajo (adelante)
       it: una pagina in basso (avanti)
   - cmd:
       en: <kbd>Ctrl-B</kbd>
     desc:
       en: one page up (backward)
-      es: una página hacia arriba
+      es: una página hacia arriba (atrás)
       it: una pagina su (indietro)
 - title:
     en: Moving via search
-    es: Ir mediante la búsqueda
+    es: Moverse usando el buscador
     it: Spostamento tramite ricerca
   commands:
   - cmd:
@@ -208,17 +208,17 @@
       en: <kbd>n</kbd>
     desc:
       en: Move to next matching row
-      es: Ir a la siguiente fila coincidente
+      es: Ir a la siguiente fila que coincida
       it: Riga corrispondente successiva
   - cmd:
       en: <kbd>N</kbd>
     desc:
       en: Move to previous matching row
-      es: Ir a la anterior fila coincidente
+      es: Ir a la anterior fila que coincida
       it: Riga corrispondente precedente
 - title:
     en: Basic row selection
-    es: Selección básica de linéas
+    es: Selección básica de filas
     it: Selezione di base di righe
   commands:
   - cmd:
@@ -237,7 +237,7 @@
       en: <kbd>t</kbd>
     desc:
       en: Toggle the current row between selected/unselected
-      es: Cambiar la fila actual entre de/seleccionada
+      es: Cambiar la fila actual entre seleccionada / deseleccionada
       it: Inverti la riga corrente tra selezionata e  non
   - cmd:
       en: <kbd>gs</kbd>
@@ -255,11 +255,11 @@
       en: <kbd>gt</kbd>
     desc:
       en: Toggle all rows between selected/unselected
-      es: Cambiar todas las filas entre de/seleccionada
+      es: Invertir selección/ deselección de todas las filas
       it: Inverti tutte le righe tra selezionate e non
 - title:
     en: Advanced row selection
-    es: Selección avanzada de linéas
+    es: Selección avanzada de filas
     it: Selezione avanzata delle righe
   commands:
   - cmd:
@@ -290,13 +290,13 @@
       en: <kbd>,</kbd>
     desc:
       en: Select all rows where the <strong>current column</strong> matches the current cell
-      es: Sel. las filas donde la <strong>columna actual</strong> coincide con la celda actual
+      es: Seleccionar las filas donde la <strong>columna actual</strong> coincide con la celda actual
       it: Le righe in cui la <strong>colonna corrente</strong> corrisponde alla cella corrente
   - cmd:
       en: <kbd>g,</kbd>
     desc:
       en: Select all rows where <strong>any column</strong> matches the current cell
-      es: Sel. las filas donde <strong>cualquier col.</strong> coincide con la celda actual
+      es: Seleccionar las filas donde <strong>cualquier columna</strong> coincide con la celda actual
       it: Le righe che corrispondono alla cella corrente in <strong>qualsiasi colonna</strong>
   - cmd:
       en: <kbd>z|</kbd> + <i>expr</i>
@@ -312,36 +312,36 @@
       it: Deseleziona le righe in cui <i>expr</i> restituisce <code>True</code>
 - title:
     en: Shifting rows / columns
-    es: Mover las filas y columnas
+    es: Mover filas y columnas
     it: Spostamento di righe / colonne
   commands:
   - cmd:
       en: <kbd>J</kbd>
     desc:
       en: Move row up
-      es: Mover hacia arriba la fila
+      es: Mover fila hacia arriba
       it: Sposta la riga verso l'alto
   - cmd:
       en: <kbd>K</kbd>
     desc:
       en: Move row down
-      es: Mover hacia abajo la fila
+      es: Mover fila hacia abajo
       it: Sposta la riga verso il basso
   - cmd:
       en: <kbd>H</kbd>
     desc:
       en: Move column left
-      es: Mover hacia la izquierda la columna
+      es: Mover columna hacia la izquierda
       it: Sposta la colonna a sinistra
   - cmd:
       en: <kbd>L</kbd>
     desc:
       en: Move column right
-      es: Mover hacia la derecha la columna
+      es: Mover columna hacia la derecha
       it: Sposta la colonna a destra
 - title:
     en: Setting column types
-    es: Establecer los tipos de columna
+    es: Establecer tipos de columna
     it: Impostazione dei tipi di colonna
   commands:
   - cmd:
@@ -383,30 +383,30 @@
       en: <kbd>^</kbd>
     desc:
       en: Rename current column
-      es: Renombrar la columna actual
+      es: Renombrar columna actual
       it: Rinomina la colonna corrente
   - cmd:
       en: <kbd>g^</kbd>
     desc:
       en: Set names of all <i>unnamed</i> columns to the values in the current or selected row(s)
-      es: Establecer los nombres de todas las columnas <i>sin nombre</i> como los valores en la fila actual (o sel.)
+      es: Establecer como nombres de todas las columnas <i>sin nombre</i> los valores de la fila actual (o selección)
       it: Imposta i nomi delle colonne senza nome, con i valori della riga corrente o selezionta(e)
   - cmd:
       en: <kbd>gz^</kbd>
     desc:
       en: Set names of all <i>visible</i> columns to the values in the current or selected row(s)
-      es: Establecer los nombres de <i>todas</i> las columnas como los valores en la fila actual (o sel.)
+      es: Establecer como nombres de <i>todas</i> las columnas los valores en la fila actual (o selección)
       it: Imposta i nomi delle colonne visibili con i valori delle riga corrente o selezionta(e)
 - title:
     en: Resizing columns
-    es: Cambiar el tamaño de las columnas
+    es: Cambiar tamaño de las columnas
     it: Ridimensionamento delle colonne
   commands:
   - cmd:
       en: <kbd>_</kbd>
     desc:
       en: Adjust the width of <strong>current column</strong> to fit text in all visible rows
-      es: Ajustar la <strong>columna actual</strong> para encajar el texto de las filas visibles
+      es: Ajustar <strong>columna actual</strong> para encajar el texto de las filas visibles
       it: Larghezza della <strong>colonna corrente</strong> in base al testo delle righe visibili
   - cmd:
       en: <kbd>g_</kbd>
@@ -418,13 +418,13 @@
       en: <kbd>z_</kbd> + <i>n</i>
     desc:
       en: Set the current column's width to <i>n</i> characters
-      es: Cambiar la anchura de la columna actual a <i>n</i> caracteres
+      es: Cambiar anchura de la columna actual a <i>n</i> caracteres
       it: Larghezza della colonna corrente pari a <i>n</i> caratteri
   - cmd:
       en: <kbd>-</kbd>
     desc:
       en: Hide the current column by setting its width to <code>0</code>
-      es: Ocultar la columna actual cambiando su anchura a <code>0</code>
+      es: Ocultar columna actual cambiando su anchura a <code>0</code>
       it: Nascondi la colonna corrente, impostando la sua larghezza a <code>0</code>
   - cmd:
       en: <kbd>gv</kbd>
@@ -436,7 +436,7 @@
       en: <kbd>z-</kbd>
     desc:
       en: Shrink the current column's width in half
-      es: Reducir la anchura de la columna actual a la mitad
+      es: Reducir anchura de la columna actual a la mitad
       it: Riduci della metà la larghezza della colonna corrente
 - title:
     en: Sort rows ...
@@ -447,25 +447,25 @@
       en: <kbd>[</kbd>
     desc:
       en: in ascending order of <i>current column</i>
-      es: ascendente, por la <i>columna actual</i>
+      es: ascendentemente, de acuerdo con <i>columna actual</i>
       it: la <i>colonna corrente</i> in ordine ascendente
   - cmd:
       en: <kbd>]</kbd>
     desc:
       en: in descending order of <i>current column</i>
-      es: descendente, por la <i>columna actual</i>
+      es: descendentemente, de acuerdo con <i>columna actual</i>
       it: la <i>colonna corrente</i> in ordine decrescente
   - cmd:
       en: <kbd>g[</kbd>
     desc:
       en: in ascending order of <i>key columns</i>
-      es: ascendente, por las <i>columnas claves</i>
+      es: ascendentemente, de acuerdo con <i>columnas claves</i>
       it: <i>le colonne chiave</i>, in ordine ascendente
   - cmd:
       en: <kbd>g]</kbd>
     desc:
       en: in descending order of <i>key columns</i>
-      es: descendente, por las <i>columnas claves</i>
+      es: descendentemente, de acuerdo con <i>columnas claves</i>
       it: <i>le colonne chiave</i>, in ordine decrescente
 - title:
     en: Filtering
@@ -476,19 +476,19 @@
       en: <kbd>"</kbd>
     desc:
       en: Create new sheet of selected rows
-      es: Crear una hoja con las filas seleccionadas
+      es: Crear una hoja nueva con las filas seleccionadas
       it: Crea un nuovo foglio dalle righe selezionate
   - cmd:
       en: <kbd>gz"</kbd>
     desc:
       en: Create new sheet with "deep copy" of selected rows
-      es: Crear una copia "profunda" de las filas seleccionadas
+      es: Crear nueva hoja con copia "profunda" de las filas seleccionadas
       it: Crea una "deep copy" delle righe selezionate
   - cmd:
       en: <kbd>R</kbd> + <i>n</i>
     desc:
       en: Create new sheet containing <i>n</i> randomly chosen rows
-      es: Crear una hoja que contiene <i>n</i> filas elegidas al azar
+      es: Crear una hoja con <i>n</i> filas elegidas al azar
       it: Crea un nuovo foglio contenente <i>n</i> righe a caso
 - title:
     en: Summarizing data
@@ -499,13 +499,13 @@
       en: <kbd>F</kbd>
     desc:
       en: Create frequency table of <i>current column</i>
-      es: Crear una tabla de frecuencias de la <i>columna actual</i>
+      es: Crear tabla de frecuencias de la <i>columna actual</i>
       it: Crea una tabella delle frequenze della <i>colonna corrente</i>
   - cmd:
       en: <kbd>gF</kbd>
     desc:
       en: Create frequency table of <i>key columns</i>
-      es: Crear una tabla de frecuencias de las <i>columnas claves</i>
+      es: Crear tabla de frecuencias de las <i>columnas claves</i>
       it: Crea una tabella delle frequenze delle <i>colonne chiave</i>
   - cmd:
       en: <kbd>+</kbd> + <i>aggregator</i>
@@ -525,7 +525,7 @@
       en: <kbd>I</kbd>
     desc:
       en: Create a "Describe Sheet," with summary stats for each column
-      es: Crear una hoja que mostra estadísticas básica de cada columna
+      es: Crear "hoja de descripción" con estadísticas básica de cada columna
       it: Crea un foglio con le statistiche di riepilogo di ogni colonna
 - title:
     en: Creating new columns
@@ -536,13 +536,13 @@
       en: <kbd>=</kbd> + <i>expr</i>
     desc:
       en: Create a new column from a Python <i>expr</i> evaluated against each row
-      es: Crear una columna que mostra el resultado de la <i>expr</i> en Python
+      es: Crear columna nueva con resultado de <i>expr</i> en Python evaluada por cada fila
       it: Crea una nuova colonna da una <i>Python expression</i> valutata su ogni riga
   - cmd:
       en: <kbd>:</kbd> + <i>regex</i>
     desc:
       en: Create new column(s) by splitting current column on <i>regex</i>
-      es: Crear columna(s) dividiendo la columna actual con <i>regex</i>
+      es: Crear columna(s) dividiendo la columna actual de acuerdo con <i>regex</i>
       it: Crea nuova/e colonna/e dividendo la corrente in base a una <i>regex</i>
   - cmd:
       en: <kbd>;</kbd> + <i>regex</i>
@@ -565,19 +565,19 @@
       en: <kbd>W</kbd>
     desc:
       en: Create pivot table sheet, with key column(s) as rows and current column as values
-      es: Crear una tabla pivot, usando las columnas claves como filas y la columna actual como valores
+      es: Crear una tabla dinámica, con columnas claves como filas y columna actual como valores
       it: Crea una tabella pivot, con le colonna/e chiave come righe e la colonna corrente come valori
   - cmd:
       en: <kbd>M</kbd>
     desc:
       en: Create "melted" sheet, with key columns as non-melted values
-      es: Crear una hoja "fundido", respetando las columnas claves
+      es: Crear una hoja "fundida" o "larga", respetando las columnas claves
       it: Crea un foglio "melted", trasformando le colonne non chiave in coppie chiave/valore
   - cmd:
       en: <kbd>T</kbd>
     desc:
       en: Create a transposed sheet, where columns become rows and v.v.
-      es: Crear un hoja transpuesta intercambiando las columnas y filas
+      es: Crear un hoja transpuesta, intercambiando las columnas y filas
       it: Crea un foglio trasposto, dove le colonne diventano righe e v.v.
 - title:
     en: Editing cells
@@ -618,18 +618,18 @@
       en: <kbd>Ctrl-k</kbd>
     desc:
       en: Clear contents from cursor's position to end of line
-      es: Borrar la parte que sigue al cursor
+      es: Borrar el contenido que sigue al cursor
       it: Cancella dalla posizione attuale sino a fine linea
 - title:
     en: Misc.
-    es: Misc.
+    es: Misceláneo
     it: Varie
   commands:
   - cmd:
       en: <kbd>Ctrl-^</kbd>
     desc:
       en: Toggle between current and previous sheet
-      es: Saltar entre la hoja actual y anterior
+      es: Saltar entre hoja actual y anterior
       it: Passa dal foglio corrente al precedente
   - cmd:
       en: <kbd>!</kbd>
@@ -641,5 +641,5 @@
       en: <kbd>Space</kbd>
     desc:
       en: Open long-name command prompt
-      es: Abrir la entrada para comandos de "nombres largos"
+      es: Abrir entrada para comandos de "nombres largos"
       it: Apri il prompt esteso dei comandi
