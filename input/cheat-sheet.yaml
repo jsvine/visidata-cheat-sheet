@@ -633,6 +633,12 @@
       es: Saltar entre hoja actual y anterior
       it: Passa dal foglio corrente al precedente
   - cmd:
+      en: <kbd>Ctrl-r</kbd>
+    desc:
+      en: Reload sheet
+      es: Recargar la hoja
+      it: Ricarica il foglio
+  - cmd:
       en: <kbd>!</kbd>
     desc:
       en: Make current column a "key" column
