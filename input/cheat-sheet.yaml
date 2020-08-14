@@ -627,11 +627,11 @@
     it: Varie
   commands:
   - cmd:
-      en: <kbd>Ctrl-^</kbd>
+      en: <kbd>!</kbd>
     desc:
-      en: Toggle between current and previous sheet
-      es: Saltar entre hoja actual y anterior
-      it: Passa dal foglio corrente al precedente
+      en: Make current column a "key" column
+      es: Marcar la columna actual como "clave"
+      it: Rendi colonna "chiave" quella attuale
   - cmd:
       en: <kbd>Ctrl-r</kbd>
     desc:
@@ -639,11 +639,11 @@
       es: Recargar la hoja
       it: Ricarica il foglio
   - cmd:
-      en: <kbd>!</kbd>
+      en: <kbd>Ctrl-^</kbd>
     desc:
-      en: Make current column a "key" column
-      es: Marcar la columna actual como "clave"
-      it: Rendi colonna "chiave" quella attuale
+      en: Toggle between current and previous sheet
+      es: Saltar entre hoja actual y anterior
+      it: Passa dal foglio corrente al precedente
   - cmd:
       en: <kbd>Space</kbd>
     desc:
