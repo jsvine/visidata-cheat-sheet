@@ -1,4 +1,5 @@
 .PHONY: clean html pdfs
+CHROMIUM ?= chromium-browser
 
 clean:
 	rm -r docs
@@ -15,7 +16,7 @@ pdfs: $(patsubst \
 )
 
 docs/downloads/visidata-cheat-sheet.%.pdf: docs/%/index.html
-	chromium-browser \
+	$(CHROMIUM) \
 		--headless \
 		--disable-gpu \
 		--no-margins \
