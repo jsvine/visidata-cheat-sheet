@@ -1,6 +1,6 @@
 # A VisiData Cheat Sheet
 
-This repository contains the source files for [A VisiData Cheat Sheet](https://jsvine.github.io/visidata-cheat-sheet/), which provides an abbreviated reference for [VisiData](https://visidata.org/) and is based on [An Introduction to VisiData](https://jsvine.github.io/intro-to-visidata/).
+This repository contains the source files for [A VisiData Cheat Sheet](https://jsvine.github.io/visidata-cheat-sheet/), which provides an abbreviated reference for [VisiData](https://visidata.org/) and is based on [An Introduction to VisiData](https://jsvine.github.io/intro-to-visidata/). It is not meant to be an exhaustive catalog of commands, but rather a concise learning aid for the VisiData-curious.
 
 The cheat sheet is currently available in the following languages:
 
