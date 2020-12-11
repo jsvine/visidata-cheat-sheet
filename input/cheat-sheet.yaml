@@ -8,15 +8,15 @@
       es: Versión
       it: Versione
     desc:
-      en: VisiData v1.5.2
+      en: VisiData v2.1
   - cmd:
       en: Updated
       es: Actualizado
       it: Aggiornato
     desc:
-      en: '2019-07-07'
-      es: '2019-08-04'
-      it: '2019-07-07'
+      en: '2020-12-09'
+      es: '2020-12-09'
+      it: '2020-12-09'
   - cmd:
       en: More info
       es: Más info
@@ -25,28 +25,10 @@
       en: <a href="https://visidata.org/">visidata.org</a><br/><a href="https://jsvine.github.io/intro-to-visidata/">jsvine.github.io/intro-to-visidata</a>
       it: <a href="https://visidata.org/">visidata.org</a><br/><a href="https://github.com/ondata/guidaVisiData/">github.com/ondata/guidaVisiData</a><br/><a href="https://jsvine.github.io/intro-to-visidata/">jsvine.github.io/intro-to-visidata</a>
 - title:
-    en: Getting out of trouble
-    es: Resolver problemas
-    it: Risolvere problemi
+    en: Getting help
+    es: Obtener ayuda
+    it: Ottenere aiuto
   commands:
-  - cmd:
-      en: <kbd>Ctrl-c</kbd>
-    desc:
-      en: Abort the current command
-      es: Abortar comando actual
-      it: Annulla il comando corrente
-  - cmd:
-      en: <kbd>Ctrl-q</kbd>
-    desc:
-      en: Force-quit VisiData entirely
-      es: Forzar salida de VisiData (por completo)
-      it: Forza la chiusura di VisiData
-  - cmd:
-      en: <kbd>q</kbd>
-    desc:
-      en: Quit the current VisiData "sheet"
-      es: Salir de hoja ("sheet") actual
-      it: Chiudi il foglio corrente di VisiData
   - cmd:
       en: <kbd>Ctrl-h</kbd>
     desc:
@@ -59,6 +41,35 @@
       en: Display list of commands available on the current sheet
       es: Mostrar lista de comandos (para la hoja actual)
       it: Mostra la lista dei comandi per il foglio corrente
+- title:
+    en: Getting out of trouble
+    es: Resolver problemas
+    it: Risolvere problemi
+  commands:
+  - cmd:
+      en: <kbd>U</kbd>/<kbd>R</kbd>
+    desc:
+      en: Undo/Redo
+      es: Deshacer/Rehacer
+      it: Annulla/Ripeti
+  - cmd:
+      en: <kbd>Ctrl-c</kbd>
+    desc:
+      en: Abort the current command
+      es: Abortar comando actual
+      it: Annulla il comando corrente
+  - cmd:
+      en: <kbd>q</kbd>
+    desc:
+      en: Quit the current VisiData "sheet"
+      es: Salir de hoja ("sheet") actual
+      it: Chiudi il foglio corrente di VisiData
+  - cmd:
+      en: <kbd>Ctrl-q</kbd>
+    desc:
+      en: Force-quit VisiData entirely
+      es: Forzar salida de VisiData (por completo)
+      it: Forza la chiusura di VisiData
 - title:
     en: Input / output
     es: Entrada / salida
@@ -533,6 +544,18 @@
     es: Crear nuevas columnas
     it: Creare nuove colonne
   commands:
+  - cmd:
+      en: <kbd>za</kbd>
+    desc:
+      en: Create a blank column
+      es: Crear columna vacía
+      it: Crea una colonna vuota
+  - cmd:
+      en: <kbd>i</kbd>
+    desc:
+      en: Create an increment column (1,2,3…)
+      es: Crear columna que incrementa (1,2,3…)
+      it: Crea una colonna che incrementa (1,2,3…)
   - cmd:
       en: <kbd>=</kbd> + <i>expr</i>
     desc:
