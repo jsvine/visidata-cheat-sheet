@@ -270,7 +270,7 @@
     
     <tr>
         <td class="cs-command"><kbd>Ctrl-q</kbd></td>
-        <td class="cs-desc">Forzar salida de VisiData (por completo)</td>
+        <td class="cs-desc">Forzar salida de VisiData</td>
     </tr>
     
 </tbody>
@@ -295,18 +295,8 @@
     </tr>
     
     <tr>
-        <td class="cs-command"><kbd>g</kbd> + <kbd>Ctrl-s</kbd> + <i>archivo</i></td>
-        <td class="cs-desc">Guardar todas las hojas a <i>nombre del archivo</i></td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>gY</kbd></td>
-        <td class="cs-desc">Copiar hoja (o filas seleccionadas) al portapapeles</td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>gzY</kbd></td>
-        <td class="cs-desc">Copiar columna (o filas seleccionadas de la columna) al portapapeles</td>
+        <td class="cs-command"><kbd>gY</kbd>/<kbd>gzY</kbd></td>
+        <td class="cs-desc">Copiar (columna de) filas seleccionadas al <i>portapapeles</i></td>
     </tr>
     
 </tbody>
@@ -327,7 +317,7 @@
     
     <tr>
         <td class="cs-command"><kbd>gS</kbd></td>
-        <td class="cs-desc">Cementerio de hojas ("Sheets Graveyard")</td>
+        <td class="cs-desc">Cementerio de hojas</td>
     </tr>
     
     <tr>
@@ -399,12 +389,12 @@
     
     <tr>
         <td class="cs-command"><kbd>/</kbd> + <i>regex</i></td>
-        <td class="cs-desc">Buscar hacia adelante en la columna <i>actual</i></td>
+        <td class="cs-desc">Buscar hacia adelante en la col. <i>actual</i></td>
     </tr>
     
     <tr>
         <td class="cs-command"><kbd>?</kbd> + <i>regex</i></td>
-        <td class="cs-desc">Buscar hacia atrás en la columna <i>actual</i></td>
+        <td class="cs-desc">Buscar hacia atrás en la col. <i>actual</i></td>
     </tr>
     
     <tr>
@@ -425,6 +415,37 @@
     <tr>
         <td class="cs-command"><kbd>N</kbd></td>
         <td class="cs-desc">Ir a la anterior fila que coincida</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Ordenar las filas ...</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>[</kbd></td>
+        <td class="cs-desc">ascendentemente, de acuerdo con <i>columna actual</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>]</kbd></td>
+        <td class="cs-desc">descendentemente, de acuerdo con <i>columna actual</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g[</kbd></td>
+        <td class="cs-desc">ascendentemente, de acuerdo con <i>columnas claves</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g]</kbd></td>
+        <td class="cs-desc">descendentemente, de acuerdo con <i>columnas claves</i></td>
     </tr>
     
 </tbody>
@@ -659,37 +680,6 @@
 <table>
 <thead>
     <tr>
-        <th class="cs-category" colspan="2">Ordenar las filas ...</th>
-    </tr>
-</thead>
-<tbody>
-    
-    <tr>
-        <td class="cs-command"><kbd>[</kbd></td>
-        <td class="cs-desc">ascendentemente, de acuerdo con <i>columna actual</i></td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>]</kbd></td>
-        <td class="cs-desc">descendentemente, de acuerdo con <i>columna actual</i></td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>g[</kbd></td>
-        <td class="cs-desc">ascendentemente, de acuerdo con <i>columnas claves</i></td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>g]</kbd></td>
-        <td class="cs-desc">descendentemente, de acuerdo con <i>columnas claves</i></td>
-    </tr>
-    
-</tbody>
-</table>
-
-<table>
-<thead>
-    <tr>
         <th class="cs-category" colspan="2">Filtrar</th>
     </tr>
 </thead>
@@ -847,6 +837,42 @@
     <tr>
         <td class="cs-command"><kbd>Ctrl-k</kbd></td>
         <td class="cs-desc">Borrar el contenido que sigue al cursor</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Copiar y pegar internamente</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>y</kbd>/<kbd>gy</kbd></td>
+        <td class="cs-desc">Copiar la fila actual (o selección)</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>p</kbd></td>
+        <td class="cs-desc">Pegar filas previamente copiadas</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>zy</kbd>/<kbd>zp</kbd></td>
+        <td class="cs-desc">Copiar/pegar la celda actual</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gzy</kbd>/<kbd>gzp</kbd></td>
+        <td class="cs-desc">Copiar/pegar la columna de filas seleccionadas</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>zP</kbd>/<kbd>gzP</kbd></td>
+        <td class="cs-desc">Pegar desde <i>portapapeles</i> a la celda actual (o selección)</td>
     </tr>
     
 </tbody>

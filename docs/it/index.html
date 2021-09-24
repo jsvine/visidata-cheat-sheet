@@ -295,18 +295,8 @@
     </tr>
     
     <tr>
-        <td class="cs-command"><kbd>g</kbd> + <kbd>Ctrl-s</kbd> + <i>nomefile</i></td>
-        <td class="cs-desc">Salva tutti i fogli come <i>nomefile</i></td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>gY</kbd></td>
-        <td class="cs-desc">Copia foglio (o righe selezionate) negli appunti</td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>gzY</kbd></td>
-        <td class="cs-desc">Copia colonna (o righe selezionate per colonna) negli appunti</td>
+        <td class="cs-command"><kbd>gY</kbd>/<kbd>gzY</kbd></td>
+        <td class="cs-desc">Copia (colonna per) righe selezionate negli <i>appunti</i></td>
     </tr>
     
 </tbody>
@@ -425,6 +415,37 @@
     <tr>
         <td class="cs-command"><kbd>N</kbd></td>
         <td class="cs-desc">Riga corrispondente precedente</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Ordina le righe ...</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>[</kbd></td>
+        <td class="cs-desc">la <i>colonna corrente</i> in ordine ascendente</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>]</kbd></td>
+        <td class="cs-desc">la <i>colonna corrente</i> in ordine decrescente</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g[</kbd></td>
+        <td class="cs-desc"><i>le colonne chiave</i>, in ordine ascendente</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g]</kbd></td>
+        <td class="cs-desc"><i>le colonne chiave</i>, in ordine decrescente</td>
     </tr>
     
 </tbody>
@@ -659,37 +680,6 @@
 <table>
 <thead>
     <tr>
-        <th class="cs-category" colspan="2">Ordina le righe ...</th>
-    </tr>
-</thead>
-<tbody>
-    
-    <tr>
-        <td class="cs-command"><kbd>[</kbd></td>
-        <td class="cs-desc">la <i>colonna corrente</i> in ordine ascendente</td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>]</kbd></td>
-        <td class="cs-desc">la <i>colonna corrente</i> in ordine decrescente</td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>g[</kbd></td>
-        <td class="cs-desc"><i>le colonne chiave</i>, in ordine ascendente</td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>g]</kbd></td>
-        <td class="cs-desc"><i>le colonne chiave</i>, in ordine decrescente</td>
-    </tr>
-    
-</tbody>
-</table>
-
-<table>
-<thead>
-    <tr>
         <th class="cs-category" colspan="2">Filtrare</th>
     </tr>
 </thead>
@@ -759,12 +749,12 @@
     
     <tr>
         <td class="cs-command"><kbd>i</kbd></td>
-        <td class="cs-desc">Crea una colonna che incrementa (1,2,3…)</td>
+        <td class="cs-desc">Crea una col. che incrementa (1,2,3…)</td>
     </tr>
     
     <tr>
         <td class="cs-command"><kbd>=</kbd> + <i>expr</i></td>
-        <td class="cs-desc">Crea una nuova colonna da una <i>Python expression</i> valutata su ogni riga</td>
+        <td class="cs-desc">Crea una nuova col. da una <i>Python expression</i> valutata su ogni riga</td>
     </tr>
     
     <tr>
@@ -847,6 +837,42 @@
     <tr>
         <td class="cs-command"><kbd>Ctrl-k</kbd></td>
         <td class="cs-desc">Cancella dalla posizione attuale sino a fine linea</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Copia e incolla internamente</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>y</kbd>/<kbd>gy</kbd></td>
+        <td class="cs-desc">Copia la riga corrente o selezionta(e)</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>p</kbd></td>
+        <td class="cs-desc">Incolla le righe copiate</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>zy</kbd>/<kbd>zp</kbd></td>
+        <td class="cs-desc">Copia/incolla la cella corrente</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gzy</kbd>/<kbd>gzp</kbd></td>
+        <td class="cs-desc">Copia/incolla la colonna per righe selezionate</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>zP</kbd>/<kbd>gzP</kbd></td>
+        <td class="cs-desc">Incolla dagli appunti nelle celle correnti/selezionate</td>
     </tr>
     
 </tbody>
