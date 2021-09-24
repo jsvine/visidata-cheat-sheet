@@ -102,15 +102,15 @@
   - cmd:
       en: <kbd>gY</kbd>
     desc:
-      en: Copy sheet (or selected rows) to clipboard
-      es: Copiar hoja (o filas seleccionadas) al portapapeles
-      it: Copia foglio (o righe selezionate) negli appunti
+      en: Copy selected rows to <i>clipboard</i>
+      es: Copiar filas seleccionadas al <i>portapapeles</i>
+      it: Copia righe selezionate negli <i>appunti</i>
   - cmd:
       en: <kbd>gzY</kbd>
     desc:
-      en: Copy column (or selected rows for column) to clipboard
-      es: Copiar columna (o filas seleccionadas de la columna) al portapapeles
-      it: Copia colonna (o righe selezionate per colonna) negli appunti
+      en: Copy column for selected rows to <i>clipboard</i>
+      es: Copiar columna de filas seleccionadas al <i>portapapeles</i>
+      it: Copia colonna per righe selezionate negli <i>appunti</i>
 - title:
     en: Metasheets
     es: Metahojas
