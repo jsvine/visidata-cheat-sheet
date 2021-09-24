@@ -295,18 +295,8 @@
     </tr>
     
     <tr>
-        <td class="cs-command"><kbd>g</kbd> + <kbd>Ctrl-s</kbd> + <i>filename</i></td>
-        <td class="cs-desc">Save all sheets to <i>filename</i></td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>gY</kbd></td>
-        <td class="cs-desc">Copy sheet (or selected rows) to clipboard</td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>gzY</kbd></td>
-        <td class="cs-desc">Copy column (or selected rows for column) to clipboard</td>
+        <td class="cs-command"><kbd>gY</kbd>/<kbd>gzY</kbd></td>
+        <td class="cs-desc">Copy (column for) selected rows to <i>clipboard</i></td>
     </tr>
     
 </tbody>
@@ -425,6 +415,37 @@
     <tr>
         <td class="cs-command"><kbd>N</kbd></td>
         <td class="cs-desc">Move to previous matching row</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Sort rows ...</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>[</kbd></td>
+        <td class="cs-desc">in ascending order of <i>current column</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>]</kbd></td>
+        <td class="cs-desc">in descending order of <i>current column</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g[</kbd></td>
+        <td class="cs-desc">in ascending order of <i>key columns</i></td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>g]</kbd></td>
+        <td class="cs-desc">in descending order of <i>key columns</i></td>
     </tr>
     
 </tbody>
@@ -659,37 +680,6 @@
 <table>
 <thead>
     <tr>
-        <th class="cs-category" colspan="2">Sort rows ...</th>
-    </tr>
-</thead>
-<tbody>
-    
-    <tr>
-        <td class="cs-command"><kbd>[</kbd></td>
-        <td class="cs-desc">in ascending order of <i>current column</i></td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>]</kbd></td>
-        <td class="cs-desc">in descending order of <i>current column</i></td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>g[</kbd></td>
-        <td class="cs-desc">in ascending order of <i>key columns</i></td>
-    </tr>
-    
-    <tr>
-        <td class="cs-command"><kbd>g]</kbd></td>
-        <td class="cs-desc">in descending order of <i>key columns</i></td>
-    </tr>
-    
-</tbody>
-</table>
-
-<table>
-<thead>
-    <tr>
         <th class="cs-category" colspan="2">Filtering</th>
     </tr>
 </thead>
@@ -847,6 +837,42 @@
     <tr>
         <td class="cs-command"><kbd>Ctrl-k</kbd></td>
         <td class="cs-desc">Clear contents from cursor's position to end of line</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <th class="cs-category" colspan="2">Copying and pasting internally</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+        <td class="cs-command"><kbd>y</kbd>/<kbd>gy</kbd></td>
+        <td class="cs-desc">Copy current/selected row(s)</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>p</kbd></td>
+        <td class="cs-desc">Paste previously copied rows</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>zy</kbd>/<kbd>zp</kbd></td>
+        <td class="cs-desc">Copy/paste current cell</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>gzy</kbd>/<kbd>gzp</kbd></td>
+        <td class="cs-desc">Copy/paste column for selected rows</td>
+    </tr>
+    
+    <tr>
+        <td class="cs-command"><kbd>zP</kbd>/<kbd>gzP</kbd></td>
+        <td class="cs-desc">Paste from <i>clipboard</i> to current/selected cell(s)</td>
     </tr>
     
 </tbody>

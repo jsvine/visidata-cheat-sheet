@@ -68,7 +68,7 @@
       en: <kbd>Ctrl-q</kbd>
     desc:
       en: Force-quit VisiData entirely
-      es: Forzar salida de VisiData (por completo)
+      es: Forzar salida de VisiData
       it: Forza la chiusura di VisiData
 - title:
     en: Input / output
@@ -92,25 +92,11 @@
       es: Guardar hoja actual a <i>nombre del archivo</i>
       it: Salva il foglio corrente come <i>nomefile</i>
   - cmd:
-      en: <kbd>g</kbd> + <kbd>Ctrl-s</kbd> + <i>filename</i>
-      es: <kbd>g</kbd> + <kbd>Ctrl-s</kbd> + <i>archivo</i>
-      it: <kbd>g</kbd> + <kbd>Ctrl-s</kbd> + <i>nomefile</i>
+      en: <kbd>gY</kbd>/<kbd>gzY</kbd>
     desc:
-      en: Save all sheets to <i>filename</i>
-      es: Guardar todas las hojas a <i>nombre del archivo</i>
-      it: Salva tutti i fogli come <i>nomefile</i>
-  - cmd:
-      en: <kbd>gY</kbd>
-    desc:
-      en: Copy sheet (or selected rows) to clipboard
-      es: Copiar hoja (o filas seleccionadas) al portapapeles
-      it: Copia foglio (o righe selezionate) negli appunti
-  - cmd:
-      en: <kbd>gzY</kbd>
-    desc:
-      en: Copy column (or selected rows for column) to clipboard
-      es: Copiar columna (o filas seleccionadas de la columna) al portapapeles
-      it: Copia colonna (o righe selezionate per colonna) negli appunti
+      en: Copy (column for) selected rows to <i>clipboard</i>
+      es: Copiar (columna de) filas seleccionadas al <i>portapapeles</i>
+      it: Copia (colonna per) righe selezionate negli <i>appunti</i>
 - title:
     en: Metasheets
     es: Metahojas
@@ -126,7 +112,7 @@
       en: <kbd>gS</kbd>
     desc:
       en: Sheets Graveyard
-      es: Cementerio de hojas ("Sheets Graveyard")
+      es: Cementerio de hojas
       it: Cimitero dei fogli
   - cmd:
       en: <kbd>C</kbd>
@@ -196,13 +182,13 @@
       en: <kbd>/</kbd> + <i>regex</i>
     desc:
       en: Search forward in <i>current</i> column
-      es: Buscar hacia adelante en la columna <i>actual</i>
+      es: Buscar hacia adelante en la col. <i>actual</i>
       it: Cerca in avanti nella colonna <i>corrente</i>
   - cmd:
       en: <kbd>?</kbd> + <i>regex</i>
     desc:
       en: Search backward in <i>current</i> column
-      es: Buscar hacia atrás en la columna <i>actual</i>
+      es: Buscar hacia atrás en la col. <i>actual</i>
       it: Cerca indietro nella colonna <i>corrente</i>
   - cmd:
       en: <kbd>g/</kbd> + <i>regex</i>
@@ -228,6 +214,35 @@
       en: Move to previous matching row
       es: Ir a la anterior fila que coincida
       it: Riga corrispondente precedente
+- title:
+    en: Sort rows ...
+    es: Ordenar las filas ...
+    it: Ordina le righe ...
+  commands:
+  - cmd:
+      en: <kbd>[</kbd>
+    desc:
+      en: in ascending order of <i>current column</i>
+      es: ascendentemente, de acuerdo con <i>columna actual</i>
+      it: la <i>colonna corrente</i> in ordine ascendente
+  - cmd:
+      en: <kbd>]</kbd>
+    desc:
+      en: in descending order of <i>current column</i>
+      es: descendentemente, de acuerdo con <i>columna actual</i>
+      it: la <i>colonna corrente</i> in ordine decrescente
+  - cmd:
+      en: <kbd>g[</kbd>
+    desc:
+      en: in ascending order of <i>key columns</i>
+      es: ascendentemente, de acuerdo con <i>columnas claves</i>
+      it: <i>le colonne chiave</i>, in ordine ascendente
+  - cmd:
+      en: <kbd>g]</kbd>
+    desc:
+      en: in descending order of <i>key columns</i>
+      es: descendentemente, de acuerdo con <i>columnas claves</i>
+      it: <i>le colonne chiave</i>, in ordine decrescente
 - title:
     en: Basic row selection
     es: Selección básica de filas
@@ -451,35 +466,6 @@
       es: Revelar todas las columnas
       it: Scopri tutte le colonne
 - title:
-    en: Sort rows ...
-    es: Ordenar las filas ...
-    it: Ordina le righe ...
-  commands:
-  - cmd:
-      en: <kbd>[</kbd>
-    desc:
-      en: in ascending order of <i>current column</i>
-      es: ascendentemente, de acuerdo con <i>columna actual</i>
-      it: la <i>colonna corrente</i> in ordine ascendente
-  - cmd:
-      en: <kbd>]</kbd>
-    desc:
-      en: in descending order of <i>current column</i>
-      es: descendentemente, de acuerdo con <i>columna actual</i>
-      it: la <i>colonna corrente</i> in ordine decrescente
-  - cmd:
-      en: <kbd>g[</kbd>
-    desc:
-      en: in ascending order of <i>key columns</i>
-      es: ascendentemente, de acuerdo con <i>columnas claves</i>
-      it: <i>le colonne chiave</i>, in ordine ascendente
-  - cmd:
-      en: <kbd>g]</kbd>
-    desc:
-      en: in descending order of <i>key columns</i>
-      es: descendentemente, de acuerdo con <i>columnas claves</i>
-      it: <i>le colonne chiave</i>, in ordine decrescente
-- title:
     en: Filtering
     es: Filtrar
     it: Filtrare
@@ -549,13 +535,13 @@
     desc:
       en: Create an increment column (1,2,3…)
       es: Crear columna que incrementa (1,2,3…)
-      it: Crea una colonna che incrementa (1,2,3…)
+      it: Crea una col. che incrementa (1,2,3…)
   - cmd:
       en: <kbd>=</kbd> + <i>expr</i>
     desc:
       en: Create a new column from a Python <i>expr</i> evaluated against each row
       es: Crear columna nueva con resultado de <i>expr</i> en Python evaluada por cada fila
-      it: Crea una nuova colonna da una <i>Python expression</i> valutata su ogni riga
+      it: Crea una nuova col. da una <i>Python expression</i> valutata su ogni riga
   - cmd:
       en: <kbd>:</kbd> + <i>regex</i>
     desc:
@@ -638,6 +624,41 @@
       en: Clear contents from cursor's position to end of line
       es: Borrar el contenido que sigue al cursor
       it: Cancella dalla posizione attuale sino a fine linea
+- title:
+    en: Copying and pasting internally
+    es: Copiar y pegar internamente
+    it: Copia e incolla internamente
+  commands:
+  - cmd:
+      en: <kbd>y</kbd>/<kbd>gy</kbd>
+    desc:
+      en: Copy current/selected row(s)
+      es: Copiar la fila actual (o selección)
+      it: Copia la riga corrente o selezionta(e)
+  - cmd:
+      en: <kbd>p</kbd>
+    desc:
+      en: Paste previously copied rows
+      es: Pegar filas previamente copiadas
+      it: Incolla le righe copiate
+  - cmd:
+      en: <kbd>zy</kbd>/<kbd>zp</kbd>
+    desc:
+      en: Copy/paste current cell
+      es: Copiar/pegar la celda actual
+      it: Copia/incolla la cella corrente
+  - cmd:
+      en: <kbd>gzy</kbd>/<kbd>gzp</kbd>
+    desc:
+      en: Copy/paste column for selected rows
+      es: Copiar/pegar la columna de filas seleccionadas
+      it: Copia/incolla la colonna per righe selezionate
+  - cmd:
+      en: <kbd>zP</kbd>/<kbd>gzP</kbd>
+    desc:
+      en: Paste from <i>clipboard</i> to current/selected cell(s)
+      es: Pegar desde <i>portapapeles</i> a la celda actual (o selección)
+      it: Incolla dagli appunti nelle celle correnti/selezionate
 - title:
     en: Misc.
     es: Misceláneo
