@@ -7,7 +7,7 @@ clean:
 	echo "<html><head><meta http-equiv='refresh' content='0; url=./en/' /></head></html>" > docs/index.html
 
 html:
-	pipenv run python scripts/build.py
+	python scripts/build.py
 
 pdfs: $(patsubst \
 	docs/%/index.html, \
