@@ -8,15 +8,15 @@
       es: Versión
       it: Versione
     desc:
-      en: VisiData v2.1
+      en: VisiData v2.6
   - cmd:
       en: Updated
       es: Actualizado
       it: Aggiornato
     desc:
-      en: '2020-12-09'
-      es: '2020-12-09'
-      it: '2020-12-09'
+      en: '2021-09-23'
+      es: '2021-09-23'
+      it: '2021-09-23'
   - cmd:
       en: More info
       es: Más info
@@ -32,9 +32,9 @@
   - cmd:
       en: <kbd>Ctrl-h</kbd>
     desc:
-      en: Display the "Quick Reference Guide"
-      es: Mostrar la guía rápida ("Quick Reference Guide")
-      it: Mostra la guida rapida di riferimento
+      en: Open the help menu
+      es: Abrir el menú de ayuda
+      it: Apri il menu di aiuto
   - cmd:
       en: <kbd>z</kbd> + <kbd>Ctrl-h</kbd>
     desc:
@@ -433,6 +433,12 @@
       es: Cambiar anchura de la columna actual a <i>n</i> caracteres
       it: Larghezza della colonna corrente pari a <i>n</i> caratteri
   - cmd:
+      en: <kbd>z-</kbd>
+    desc:
+      en: Shrink the current column's width in half
+      es: Reducir anchura de la columna actual a la mitad
+      it: Riduci della metà la larghezza della colonna corrente
+  - cmd:
       en: <kbd>-</kbd>
     desc:
       en: Hide the current column by setting its width to <code>0</code>
@@ -444,12 +450,6 @@
       en: Unhide all columns
       es: Revelar todas las columnas
       it: Scopri tutte le colonne
-  - cmd:
-      en: <kbd>z-</kbd>
-    desc:
-      en: Shrink the current column's width in half
-      es: Reducir anchura de la columna actual a la mitad
-      it: Riduci della metà la larghezza della colonna corrente
 - title:
     en: Sort rows ...
     es: Ordenar las filas ...
@@ -496,12 +496,6 @@
       en: Create new sheet with "deep copy" of selected rows
       es: Crear nueva hoja con copia "profunda" de las filas seleccionadas
       it: Crea una "deep copy" delle righe selezionate
-  - cmd:
-      en: <kbd>R</kbd> + <i>n</i>
-    desc:
-      en: Create new sheet containing <i>n</i> randomly chosen rows
-      es: Crear una hoja con <i>n</i> filas elegidas al azar
-      it: Crea un nuovo foglio contenente <i>n</i> righe a caso
 - title:
     en: Summarizing data
     es: Resumir los datos
