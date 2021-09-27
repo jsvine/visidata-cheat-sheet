@@ -262,28 +262,28 @@
   - cmd:
       en: <kbd>[</kbd>
     desc:
-      de: in aufsteigender Reihenfolge nach der <i>aktuellen Spalte</i>
+      de: aufsteigend nach der <i>aktuellen Spalte</i>
       en: in ascending order of <i>current column</i>
       es: ascendentemente, de acuerdo con <i>columna actual</i>
       it: la <i>colonna corrente</i> in ordine ascendente
   - cmd:
       en: <kbd>]</kbd>
     desc:
-      de: in absteigender Reihenfolge nach der <i>aktuellen Spalte</i>
+      de: absteigend nach der <i>aktuellen Spalte</i>
       en: in descending order of <i>current column</i>
       es: descendentemente, de acuerdo con <i>columna actual</i>
       it: la <i>colonna corrente</i> in ordine decrescente
   - cmd:
       en: <kbd>g[</kbd>
     desc:
-      de: in aufsteigender Reihenfolge nach der <i>Indexspalte</i>
+      de: aufsteigend nach der <i>Indexspalte</i>
       en: in ascending order of <i>key columns</i>
       es: ascendentemente, de acuerdo con <i>columnas claves</i>
       it: <i>le colonne chiave</i>, in ordine ascendente
   - cmd:
       en: <kbd>g]</kbd>
     desc:
-      de: in absteigender Reihenfolge nach der <i>Indexspalte</i>
+      de: absteigend nach der <i>Indexspalte</i>
       en: in descending order of <i>key columns</i>
       es: descendentemente, de acuerdo con <i>columnas claves</i>
       it: <i>le colonne chiave</i>, in ordine decrescente
@@ -488,14 +488,14 @@
   - cmd:
       en: <kbd>g^</kbd>
     desc:
-      de: Namen aller <i>unbenannten</i> Spalten auf die Werte in der aktuellen oder ausgewählten Reihe(n) setzen
+      de: <i>Unbenannte</i> Spalten nach aktueller oder ausgewählte(n) Zeile(n) benennen
       en: Set names of all <i>unnamed</i> columns to the values in the current or selected row(s)
       es: Establecer como nombres de todas las columnas <i>sin nombre</i> los valores de la fila actual (o selección)
       it: Imposta i nomi delle colonne senza nome, con i valori della riga corrente o selezionta(e)
   - cmd:
       en: <kbd>gz^</kbd>
     desc:
-      de: Namen aller <i>sichtbaren</i> Spalten auf die Werte in der aktuellen oder ausgewählten Reihe(n) setzen
+      de: Alle <i>sichtbaren</i> Spalten nach aktueller oder ausgewählte(n) Zeile(n) benennen
       en: Set names of all <i>visible</i> columns to the values in the current or selected row(s)
       es: Establecer como nombres de <i>todas</i> las columnas los valores en la fila actual (o selección)
       it: Imposta i nomi delle colonne visibili con i valori delle riga corrente o selezionta(e)
@@ -508,14 +508,14 @@
   - cmd:
       en: <kbd>_</kbd>
     desc:
-      de: Breite der <strong>aktuellen Spalte</strong> so setzen, dass der Inhalt aller sichtbaren Zeilen hineinpasst
+      de: Breite der <strong>aktuellen Spalte</strong> auf die Breite des sichtbaren Inhalts setzen
       en: Adjust the width of <strong>current column</strong> to fit text in all visible rows
       es: Ajustar <strong>columna actual</strong> para encajar el texto de las filas visibles
       it: Larghezza della <strong>colonna corrente</strong> in base al testo delle righe visibili
   - cmd:
       en: <kbd>g_</kbd>
     desc:
-      de: Breite <strong>aller Spalten</strong> so setzen, dass der Inhalt aller sichtbaren Zeilen hineinpasst
+      de: Breite <strong>aller Spalten</strong> auf die Breite des sichtbaren Inhalts setzen
       en: Adjust the width of <strong>all columns</strong> to fit text in all visible rows
       es: Ajustar <strong>todas las columnas</strong> para encajar el texto de las filas visibles
       it: Larghezza di <strong>tutte le colonne</strong> in base al testo delle righe visibili
@@ -563,7 +563,7 @@
   - cmd:
       en: <kbd>gz"</kbd>
     desc:
-      de: Neues Arbeitsblatt mit einer "Tiefenkopie" der ausgewählten Zeilen erstellen
+      de: Neues Arbeitsblatt aus »Tiefenkopie« ausgewählter Zeilen erstellen
       en: Create new sheet with "deep copy" of selected rows
       es: Crear nueva hoja con copia "profunda" de las filas seleccionadas
       it: Crea una "deep copy" delle righe selezionate
@@ -576,14 +576,14 @@
   - cmd:
       en: <kbd>F</kbd>
     desc:
-      de: Frequenzanalyse der <i>aktuellen Spalte</i> durchführen
+      de: Frequenzanalyse der <i>aktuellen Spalte</i>
       en: Create frequency table of <i>current column</i>
       es: Crear tabla de frecuencias de la <i>columna actual</i>
       it: Crea una tabella delle frequenze della <i>colonna corrente</i>
   - cmd:
       en: <kbd>gF</kbd>
     desc:
-      de: Frequenzanalyse der <i>Indexspalten</i> durchführen
+      de: Frequenzanalyse der <i>Indexspalte(n)</i>
       en: Create frequency table of <i>key columns</i>
       es: Crear tabla de frecuencias de las <i>columnas claves</i>
       it: Crea una tabella delle frequenze delle <i>colonne chiave</i>
@@ -606,7 +606,7 @@
   - cmd:
       en: <kbd>I</kbd>
     desc:
-      de: Arbeitsblatt mit zusammenfassenden Statistiken für jede Spalte erstellen
+      de: Zusammenfassende Statistiken für jede Spalte erstellen
       en: Create a "Describe Sheet," with summary stats for each column
       es: Crear "hoja de descripción" con estadísticas básica de cada columna
       it: Crea un foglio con le statistiche di riepilogo di ogni colonna
@@ -633,28 +633,28 @@
   - cmd:
       en: <kbd>=</kbd> + <i>expr</i>
     desc:
-      de: Spalte erstellen, deren Werte durch den Python-Ausdruck <i>expr</i> erzeugt werden
+      de: Spalte mit dem Python-Ausdruck <i>expr</i> erstellen
       en: Create a new column from a Python <i>expr</i> evaluated against each row
       es: Crear columna nueva con resultado de <i>expr</i> en Python evaluada por cada fila
       it: Crea una nuova col. da una <i>Python expression</i> valutata su ogni riga
   - cmd:
       en: <kbd>:</kbd> + <i>regex</i>
     desc:
-      de: Neue Spalte(n) erstellen durch Auftrennen der aktuellen Spalte durch <i>regex</i>
+      de: Neue Spalte(n) durch Auftrennen der aktuellen Spalte durch <i>regex</i> erstellen
       en: Create new column(s) by splitting current column on <i>regex</i>
       es: Crear columna(s) dividiendo la columna actual de acuerdo con <i>regex</i>
       it: Crea nuova/e colonna/e dividendo la corrente in base a una <i>regex</i>
   - cmd:
       en: <kbd>;</kbd> + <i>regex</i>
     desc:
-      de: Neue Spalte(n) erstellen durch Extrahieren von <i>regex</i>-Gruppen aus der aktuellen Spalte
+      de: Neue Spalte(n) mit <i>regex</i>-Gruppen aus der aktuellen Spalte erstellen
       en: Create new column(s) by extracting <i>regex</i> groups from current column
       es: Crear columna(s) extrayendo los grupos <i>regex</i> de la columna actual
       it: Crea nuova/e colonna/e estraendo gruppi di <i>regex</i> dalla colonna corrente
   - cmd:
       en: <kbd>'</kbd>
     desc:
-      de: Arbeitsblatt mit "fixierte" Kopie der aktuellen Spalte erstellen, in der alle Zellen evaluiert sind
+      de: »Fixierte« Kopie der aktuellen Spalte mit evaluierten Zellen erstellen
       en: Create "frozen" copy of current column, with all cells evaluated
       es: Crear una copia "congelada" de la columna actual
       it: Crea una copia "congelata" della colonna corrente
@@ -667,21 +667,21 @@
   - cmd:
       en: <kbd>W</kbd>
     desc:
-      de: Arbeitsblatt mit Pivottabelle erzeugen mit Indexspalte(n) als Zeilen und aktueller Spalte als Werte
+      de: Pivottabelle mit Indexspalte(n) als Zeilen und aktueller Spalte als Werte erzeugen
       en: Create pivot table sheet, with key column(s) as rows and current column as values
       es: Crear una tabla dinámica, con columnas claves como filas y columna actual como valores
       it: Crea una tabella pivot, con le colonna/e chiave come righe e la colonna corrente come valori
   - cmd:
       en: <kbd>M</kbd>
     desc:
-      de: Arbeitsblatt durch "Aufschmelzen" erzeugen mit Indexspalten als nicht-aufgeschmolzene Werte
+      de: Mit Indexspalten als nicht-aufgeschmolzenen Werten »aufschmelzen«
       en: Create "melted" sheet, with key columns as non-melted values
       es: Crear una hoja "fundida" o "larga", respetando las columnas claves
       it: Crea un foglio "melted", trasformando le colonne non chiave in coppie chiave/valore
   - cmd:
       en: <kbd>T</kbd>
     desc:
-      de: Transponiertes Arbeitsblatt erzeugen durch Vertauschen von Zeilen und Spalten
+      de: Arbeitsblatt durch Vertauschen von Zeilen und Spalten transponieren
       en: Create a transposed sheet, where columns become rows and v.v.
       es: Crear un hoja transpuesta, intercambiando las columnas y filas
       it: Crea un foglio trasposto, dove le colonne diventano righe e v.v.
@@ -729,7 +729,7 @@
   - cmd:
       en: <kbd>Ctrl-k</kbd>
     desc:
-      de: Vom Zeiger bis zum Zeilenende löschen
+      de: Von Zeiger bis Zeilenende löschen
       en: Clear contents from cursor's position to end of line
       es: Borrar el contenido que sigue al cursor
       it: Cancella dalla posizione attuale sino a fine linea
@@ -770,7 +770,7 @@
   - cmd:
       en: <kbd>zP</kbd>/<kbd>gzP</kbd>
     desc:
-      de: Aus der <i>Zwischenablage</i> in die aktuelle(n)/ausgewählte(n) Zelle(n) einfügen
+      de: <i>Zwischenablage</i> in aktuelle/ausgewählte Zelle(n) einfügen
       en: Paste from <i>clipboard</i> to current/selected cell(s)
       es: Pegar desde <i>portapapeles</i> a la celda actual (o selección)
       it: Incolla dagli appunti nelle celle correnti/selezionate
@@ -783,7 +783,7 @@
   - cmd:
       en: <kbd>!</kbd>
     desc:
-      de: Aktuelle Spalte zur "Indexspalte" machen
+      de: Aktuelle Spalte zur »Indexspalte« machen
       en: Make current column a "key" column
       es: Marcar la columna actual como "clave"
       it: Rendi colonna "chiave" quella attuale
@@ -797,7 +797,7 @@
   - cmd:
       en: <kbd>Ctrl-^</kbd>
     desc:
-      de: Zwischen aktuellem und vorherigen Arbeitsblatt umschalten
+      de: Aktuelles/vorheriges Arbeitsblatt auswählen
       en: Toggle between current and previous sheet
       es: Saltar entre hoja actual y anterior
       it: Passa dal foglio corrente al precedente
