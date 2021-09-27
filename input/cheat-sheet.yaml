@@ -158,7 +158,7 @@
       es: Opciones de hoja actual
       it: Foglio delle opzioni del foglio corrente
 - title:
-    de: Zeigerbewegung ...
+    de: Zeiger bewegen ...
     en: Move cursor ...
     es: Mover el cursor ...
     it: Sposta il cursore ...
@@ -166,42 +166,42 @@
   - cmd:
       en: <kbd>gj</kbd>
     desc:
-      de: In die letzte Zeile
+      de: in die letzte Zeile
       en: to the last row
       es: a la última fila
       it: all'ultima riga
   - cmd:
       en: <kbd>gk</kbd>
     desc:
-      de: In die erste Zeile
+      de: in die erste Zeile
       en: to the first row
       es: a la primera fila
       it: alla prima riga
   - cmd:
       en: <kbd>gh</kbd>
     desc:
-      de: Zur am weitesten links stehenden Spalte
+      de: in die ganz linke Spalte
       en: to the leftmost column
       es: a la última columna de la izquierda
       it: alla colonna più a sinistra
   - cmd:
       en: <kbd>gl</kbd>
     desc:
-      de: Zur am weitesten rechts stehenden Spalte
+      de: in die ganz rechte Spalte
       en: to the rightmost column
       es: a la última columna de la derecha
       it: alla colonna più a destra
   - cmd:
       en: <kbd>Ctrl-F</kbd>
     desc:
-      de: Eine Seite nach unten (vorwärts)
+      de: eine Seite nach unten (vorwärts)
       en: one page down (forward)
       es: una página hacia abajo (adelante)
       it: una pagina in basso (avanti)
   - cmd:
       en: <kbd>Ctrl-B</kbd>
     desc:
-      de: Eine Seite nach oben (rückwärts)
+      de: eine Seite nach oben (rückwärts)
       en: one page up (backward)
       es: una página hacia arriba (atrás)
       it: una pagina su (indietro)
@@ -262,28 +262,28 @@
   - cmd:
       en: <kbd>[</kbd>
     desc:
-      de: In aufsteigender Reihenfolge nach der <i>aktuellen Spalte</i>
+      de: in aufsteigender Reihenfolge nach der <i>aktuellen Spalte</i>
       en: in ascending order of <i>current column</i>
       es: ascendentemente, de acuerdo con <i>columna actual</i>
       it: la <i>colonna corrente</i> in ordine ascendente
   - cmd:
       en: <kbd>]</kbd>
     desc:
-      de: In absteigender Reihenfolge nach der <i>aktuellen Spalte</i>
+      de: in absteigender Reihenfolge nach der <i>aktuellen Spalte</i>
       en: in descending order of <i>current column</i>
       es: descendentemente, de acuerdo con <i>columna actual</i>
       it: la <i>colonna corrente</i> in ordine decrescente
   - cmd:
       en: <kbd>g[</kbd>
     desc:
-      de: In aufsteigender Reihenfolge nach der <i>Indexspalte</i>
+      de: in aufsteigender Reihenfolge nach der <i>Indexspalte</i>
       en: in ascending order of <i>key columns</i>
       es: ascendentemente, de acuerdo con <i>columnas claves</i>
       it: <i>le colonne chiave</i>, in ordine ascendente
   - cmd:
       en: <kbd>g]</kbd>
     desc:
-      de: In absteigender Reihenfolge nach der <i>Indexspalte</i>
+      de: in absteigender Reihenfolge nach der <i>Indexspalte</i>
       en: in descending order of <i>key columns</i>
       es: descendentemente, de acuerdo con <i>columnas claves</i>
       it: <i>le colonne chiave</i>, in ordine decrescente
