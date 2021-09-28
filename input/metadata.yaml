@@ -1,3 +1,11 @@
+de:
+  title: VisiData-Spickzettel
+  description: Ein Spickzettel für VisiData-Kurzbefehle
+  authors:
+    - Tobias Dussa
+  pdf_link_text: Als PDF herunterladen
+  other_lang_text: Andere Sprachen
+
 en:
   title: A VisiData Cheat Sheet 
   description: A cheat sheet for VisiData commands
