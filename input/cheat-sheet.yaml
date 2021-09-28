@@ -112,7 +112,7 @@
   - cmd:
       en: <kbd>gY</kbd>/<kbd>gzY</kbd>
     desc:
-      de: Ausgewählte Zeilen (der aktuellen Spalte) in die <i>Zwischenablage</i> kopieren
+      de: »Ausgewählte Zeilen (aktuelle Spalte) in die Zwischenablage kopieren«
       en: Copy (column for) selected rows to <i>clipboard</i>
       es: Copiar (columna de) filas seleccionadas al <i>portapapeles</i>
       it: Copia (colonna per) righe selezionate negli <i>appunti</i>
