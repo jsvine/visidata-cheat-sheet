@@ -7,6 +7,7 @@ The cheat sheet is currently available in the following languages:
 - [English](https://jsvine.github.io/visidata-cheat-sheet/en/)
 - [Spanish](https://jsvine.github.io/visidata-cheat-sheet/es/) (with help from [Data Crítica](https://twitter.com/Datacritica))
 - [Italian](https://jsvine.github.io/visidata-cheat-sheet/it/) (by [Associazione onData](https://ondata.it/))
+- [German](https://jsvine.github.io/visidata-cheat-sheet/de/) (by [Tobias Dussa](https://github.com/tdussa))
 
 ### Other versions
 
