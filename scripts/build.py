@@ -45,6 +45,7 @@ def main():
             meta = meta[lang],
             lang = lang,
             all_langs = list(langs),
+            papersize = meta[lang]['papersize'],
         )
 
         if args.stdout:

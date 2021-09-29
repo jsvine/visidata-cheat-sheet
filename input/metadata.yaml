@@ -5,6 +5,7 @@ de:
     - Tobias Dussa
   pdf_link_text: Als PDF herunterladen
   other_lang_text: Andere Sprachen
+  papersize: A4
 
 en:
   title: A VisiData Cheat Sheet 
@@ -13,6 +14,7 @@ en:
     - Jeremy Singer-Vine
   pdf_link_text: Download the One-Page PDF
   other_lang_text: Other languages
+  papersize: Letter
 
 es:
   title: Un "Cheat Sheet" Para VisiData
@@ -22,6 +24,7 @@ es:
     - Data Crítica
   pdf_link_text: Descargar la Versión PDF
   other_lang_text: Otras idiomas
+  papersize: A4
 
 it:
   title: VisiData Cheat Sheet
@@ -30,3 +33,4 @@ it:
     - Associazione onData
   pdf_link_text: Scarica la versione in PDF
   other_lang_text: Altri linguaggi
+  papersize: A4
