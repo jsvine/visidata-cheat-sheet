@@ -14,7 +14,7 @@ en:
     - Jeremy Singer-Vine
   pdf_link_text: Download the One-Page PDF
   other_lang_text: Other languages
-  papersize: Letter
+  papersize: letter
 
 es:
   title: Un "Cheat Sheet" Para VisiData
