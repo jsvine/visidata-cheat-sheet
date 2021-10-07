@@ -8,6 +8,8 @@ import os
 
 from uniquekeys import UniqueKeyLoader
 
+PAPERSIZES = [ "letter", "A4" ]
+
 def parse_args(args):
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -45,7 +47,7 @@ def main():
             meta = meta[lang],
             lang = lang,
             all_langs = list(langs),
-            papersize = meta[lang]['papersize'],
+            all_sizes = PAPERSIZES,
         )
 
         if args.stdout:
