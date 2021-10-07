@@ -24,7 +24,7 @@ es:
     - Data Crítica
   pdf_link_text: Descargar la Versión PDF
   other_lang_text: Otras idiomas
-  papersize: A4
+  papersize: letter
 
 it:
   title: VisiData Cheat Sheet
