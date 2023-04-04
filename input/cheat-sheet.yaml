@@ -10,17 +10,17 @@
       es: Versión
       it: Versione
     desc:
-      en: VisiData v2.6
+      en: VisiData v2.11
   - cmd:
       de: Aktualisiert
       en: Updated
       es: Actualizado
       it: Aggiornato
     desc:
-      de: '2021-09-23'
-      en: '2021-09-23'
-      es: '2021-09-23'
-      it: '2021-09-23'
+      de: '2023-04-04'
+      en: '2023-04-04'
+      es: '2023-04-04'
+      it: '2023-04-04'
   - cmd:
       de: Weiterführende Informationen
       en: More info
