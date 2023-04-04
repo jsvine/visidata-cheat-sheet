@@ -1,6 +1,10 @@
-.PHONY: clean html pdfs
+.PHONY: venv clean html pdfs
 CHROMIUM ?= chromium-browser
 SIZES = letter A4
+
+venv:
+	python -m venv venv
+	venv/bin/pip install -r requirements.txt
 
 clean:
 	rm -r docs
