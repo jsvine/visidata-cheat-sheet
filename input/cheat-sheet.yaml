@@ -406,17 +406,17 @@
   - cmd:
       en: <kbd>J</kbd>
     desc:
-      de: Zeile nach oben schieben
-      en: Move row up
-      es: Mover fila hacia arriba
-      it: Sposta la riga verso l'alto
-  - cmd:
-      en: <kbd>K</kbd>
-    desc:
       de: Zeile nach unten schieben
       en: Move row down
       es: Mover fila hacia abajo
       it: Sposta la riga verso il basso
+  - cmd:
+      en: <kbd>K</kbd>
+    desc:
+      de: Zeile nach oben schieben
+      en: Move row up
+      es: Mover fila hacia arriba
+      it: Sposta la riga verso l'alto
   - cmd:
       en: <kbd>H</kbd>
     desc:
