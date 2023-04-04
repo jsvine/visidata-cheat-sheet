@@ -192,14 +192,14 @@
       es: a la última columna de la derecha
       it: alla colonna più a destra
   - cmd:
-      en: <kbd>Ctrl-F</kbd>
+      en: <kbd>Ctrl-f</kbd>
     desc:
       de: eine Seite nach unten (vorwärts)
       en: one page down (forward)
       es: una página hacia abajo (adelante)
       it: una pagina in basso (avanti)
   - cmd:
-      en: <kbd>Ctrl-B</kbd>
+      en: <kbd>Ctrl-b</kbd>
     desc:
       de: eine Seite nach oben (rückwärts)
       en: one page up (backward)
