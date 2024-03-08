@@ -10,17 +10,17 @@
       es: Versión
       it: Versione
     desc:
-      en: VisiData v2.11
+      en: VisiData v3.0.2
   - cmd:
       de: Aktualisiert
       en: Updated
       es: Actualizado
       it: Aggiornato
     desc:
-      de: '2023-04-04'
-      en: '2023-04-04'
-      es: '2023-04-04'
-      it: '2023-04-04'
+      de: '2024-03-08'
+      en: '2024-03-08'
+      es: '2024-03-08'
+      it: '2024-03-08'
   - cmd:
       de: Weiterführende Informationen
       en: More info
@@ -640,17 +640,24 @@
   - cmd:
       en: <kbd>:</kbd> + <i>regex</i>
     desc:
-      de: Neue Spalte(n) durch Auftrennen der aktuellen Spalte durch <i>regex</i> erstellen
-      en: Create new column(s) by splitting current column on <i>regex</i>
-      es: Crear columna(s) dividiendo la columna actual de acuerdo con <i>regex</i>
-      it: Crea nuova/e colonna/e dividendo la corrente in base a una <i>regex</i>
+      de: Neue Spalte durch Auftrennen der aktuellen Spalte durch <i>regex</i> erstellen
+      en: Create new column by splitting current column on <i>regex</i>
+      es: Crear columna dividiendo la columna actual de acuerdo con <i>regex</i>
+      it: Crea nuova colonna dividendo la corrente in base a una <i>regex</i>
   - cmd:
       en: <kbd>;</kbd> + <i>regex</i>
     desc:
-      de: Neue Spalte(n) mit <i>regex</i>-Gruppen aus der aktuellen Spalte erstellen
-      en: Create new column(s) by extracting <i>regex</i> groups from current column
-      es: Crear columna(s) extrayendo los grupos <i>regex</i> de la columna actual
-      it: Crea nuova/e colonna/e estraendo gruppi di <i>regex</i> dalla colonna corrente
+      de: Neue Spalte mit <i>regex</i>-Gruppen aus der aktuellen Spalte erstellen
+      en: Create new column by extracting <i>regex</i> groups from current column
+      es: Crear columna extrayendo los grupos <i>regex</i> de la columna actual
+      it: Crea nuova colonna estraendo gruppi di <i>regex</i> dalla colonna corrente
+  - cmd:
+      en: <kbd>(</kbd>
+    desc:
+      de: Erweitern Spalte
+      en: Expand column
+      es: Expandir columna
+      it: Espande la colonna
   - cmd:
       en: <kbd>'</kbd>
     desc:
